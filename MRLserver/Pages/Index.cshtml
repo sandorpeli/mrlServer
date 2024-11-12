@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <!-- TextBox for displaying program messages -->
+    <div>
+        <textarea id="programOutput" class="form-control mt-3" rows="5" readonly>@Model.ProgramOutput</textarea>
+    </div>
+
+    <p>Learn about us: <a href="http://lifon.hu"> link</a>.</p>
+</div>
