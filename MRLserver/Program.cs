@@ -3,6 +3,14 @@ using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.Listen(IPAddress.Any, 4243, listenOptions =>
+    {
+        listenOptions.UseHttps("Certificate/httpscertificate.pfx", "LifonOrcaMRL5687");
+    });
+});
+
 SharedMRLdata sharedData = new SharedMRLdata();
 builder.Services.AddSingleton(sharedData);
 /*
@@ -34,7 +42,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-//SslServer mySslServer = new SslServer(sharedData);
+SslServer mySslServer = new SslServer(sharedData);
 
 app.Run();
 

@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\sslserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:sslserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C75014-D7ED-49FB-99B7-FA765066CFA2}|MRLserver.csproj|d:\\work\\lifon\\mrl\\mrl server\\mrlserver\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,46 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SslServer.cs",
               "DocumentMoniker": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\SslServer.cs",
               "RelativeDocumentMoniker": "SslServer.cs",
               "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\SslServer.cs",
               "RelativeToolTip": "SslServer.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAqwHkAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:50:27.551Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-12T14:22:46.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-12T14:11:09.209Z",
               "EditorCaption": ""
             },
             {
@@ -84,7 +50,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Program.cs*",
               "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T13:17:54.126Z",
               "EditorCaption": ""
@@ -97,20 +63,20 @@
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
               "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBIAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswFAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T13:03:43.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-08T13:03:33.661Z",
               "EditorCaption": ""
