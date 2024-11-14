@@ -12,14 +12,14 @@ namespace MRLserver.MRLs
 {
     public class DetailsModel : PageModel
     {
-        private readonly MRLserver.Data.MRLserverContext _context;
+        private readonly MRLserver.Data.MRLservContext _context;
 
-        public DetailsModel(MRLserver.Data.MRLserverContext context)
+        public DetailsModel(MRLserver.Data.MRLservContext context)
         {
             _context = context;
         }
 
-        public MRLclass MRLclass { get; set; } = default!;
+        public MRLmodel MRLmodel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,14 +28,14 @@ namespace MRLserver.MRLs
                 return NotFound();
             }
 
-            var mrlclass = await _context.MRLclass.FirstOrDefaultAsync(m => m.ID == id);
-            if (mrlclass == null)
+            var mrlmodel = await _context.MRLmodel.FirstOrDefaultAsync(m => m.ID == id);
+            if (mrlmodel == null)
             {
                 return NotFound();
             }
             else
             {
-                MRLclass = mrlclass;
+                MRLmodel = mrlmodel;
             }
             return Page();
         }

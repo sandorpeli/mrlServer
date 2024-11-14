@@ -12,15 +12,15 @@ namespace MRLserver.MRLs
 {
     public class DeleteModel : PageModel
     {
-        private readonly MRLserver.Data.MRLserverContext _context;
+        private readonly MRLserver.Data.MRLservContext _context;
 
-        public DeleteModel(MRLserver.Data.MRLserverContext context)
+        public DeleteModel(MRLserver.Data.MRLservContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public MRLclass MRLclass { get; set; } = default!;
+        public MRLmodel MRLmodel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,15 +29,15 @@ namespace MRLserver.MRLs
                 return NotFound();
             }
 
-            var mrlclass = await _context.MRLclass.FirstOrDefaultAsync(m => m.ID == id);
+            var mrlmodel = await _context.MRLmodel.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (mrlclass == null)
+            if (mrlmodel == null)
             {
                 return NotFound();
             }
             else
             {
-                MRLclass = mrlclass;
+                MRLmodel = mrlmodel;
             }
             return Page();
         }
@@ -49,11 +49,11 @@ namespace MRLserver.MRLs
                 return NotFound();
             }
 
-            var mrlclass = await _context.MRLclass.FindAsync(id);
-            if (mrlclass != null)
+            var mrlmodel = await _context.MRLmodel.FindAsync(id);
+            if (mrlmodel != null)
             {
-                MRLclass = mrlclass;
-                _context.MRLclass.Remove(MRLclass);
+                MRLmodel = mrlmodel;
+                _context.MRLmodel.Remove(MRLmodel);
                 await _context.SaveChangesAsync();
             }
 

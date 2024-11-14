@@ -12,18 +12,18 @@ namespace MRLserver.MRLs
 {
     public class IndexModel : PageModel
     {
-        private readonly MRLserver.Data.MRLserverContext _context;
+        private readonly MRLserver.Data.MRLservContext _context;
 
-        public IndexModel(MRLserver.Data.MRLserverContext context)
+        public IndexModel(MRLserver.Data.MRLservContext context)
         {
             _context = context;
         }
 
-        public IList<MRLclass> MRLclass { get;set; } = default!;
+        public IList<MRLmodel> MRLmodel { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            MRLclass = await _context.MRLclass.ToListAsync();
+            MRLmodel = await _context.MRLmodel.ToListAsync();
         }
     }
 }

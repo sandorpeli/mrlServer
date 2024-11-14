@@ -12,9 +12,9 @@ namespace MRLserver.MRLs
 {
     public class CreateModel : PageModel
     {
-        private readonly MRLserver.Data.MRLserverContext _context;
+        private readonly MRLserver.Data.MRLservContext _context;
 
-        public CreateModel(MRLserver.Data.MRLserverContext context)
+        public CreateModel(MRLserver.Data.MRLservContext context)
         {
             _context = context;
         }
@@ -25,7 +25,7 @@ namespace MRLserver.MRLs
         }
 
         [BindProperty]
-        public MRLclass MRLclass { get; set; } = default!;
+        public MRLmodel MRLmodel { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +35,7 @@ namespace MRLserver.MRLs
                 return Page();
             }
 
-            _context.MRLclass.Add(MRLclass);
+            _context.MRLmodel.Add(MRLmodel);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

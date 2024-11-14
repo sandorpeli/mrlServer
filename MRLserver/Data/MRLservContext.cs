@@ -7,13 +7,13 @@ using MRLserver.Models;
 
 namespace MRLserver.Data
 {
-    public class MRLserverContext : DbContext
+    public class MRLservContext : DbContext
     {
-        public MRLserverContext (DbContextOptions<MRLserverContext> options)
+        public MRLservContext (DbContextOptions<MRLservContext> options)
             : base(options)
         {
         }
 
-        public DbSet<MRLserver.Models.MRLclass> MRLclass { get; set; } = default!;
+        public DbSet<MRLserver.Models.MRLmodel> MRLmodel { get; set; } = default!;
     }
 }

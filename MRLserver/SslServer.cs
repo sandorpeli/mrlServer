@@ -1,24 +1,24 @@
-﻿using System;
-using System.Net.Sockets;
+﻿using MRLserver;
 using System.Net;
-using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
+using System.Net.Sockets;
 using System.Security.Authentication;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using MRLserver;
 using System.Text.RegularExpressions;
 using MRLserver.Data;
 using MRLserver.Models;
-using Microsoft.EntityFrameworkCore;
+
 
 public class SslServer
 {
     private static X509Certificate2 serverCertificate;
     private SharedMRLdata _sharedData;
-    private readonly MRLserverContext _sql_context;
 
-    public SslServer(SharedMRLdata sharedData, MRLserverContext sql_context)
-	{
+    private readonly MRLservContext _sql_context;
+
+    public SslServer(SharedMRLdata sharedData, MRLservContext sql_context)
+    {
         _sql_context = sql_context;  // _context is now available for use in this class
         _sharedData = sharedData;
         // Load the SSL certificate (assuming it’s in the current directory).
@@ -30,14 +30,14 @@ public class SslServer
         Console.WriteLine("Server started on port 4242.");
 
         _ = AcceptClientsAsync(listener);
-/*
-        while (true)
-        {
-            TcpClient client = listener.AcceptTcpClient();
-            Console.WriteLine("Client connected.");
-            Task.Run(() => HandleClient(client));
-        }
-*/
+        /*
+                while (true)
+                {
+                    TcpClient client = listener.AcceptTcpClient();
+                    Console.WriteLine("Client connected.");
+                    Task.Run(() => HandleClient(client));
+                }
+        */
     }
 
     private async Task AcceptClientsAsync(TcpListener listener)
@@ -63,14 +63,16 @@ public class SslServer
 
                 // Olvasás/írás a klienssel (példaként)
                 byte[] buffer = new byte[4096];
-                while (true) { 
+                while (true)
+                {
                     int bytesRead = await sslStream.ReadAsync(buffer, 0, buffer.Length);
                     // Ha a bytesRead 0, akkor a kliens lecsatlakozott
                     if (bytesRead == 0)
                     {
                         Console.WriteLine("Client disconnected.");
                         break;
-                    } else
+                    }
+                    else
                     {
                         string fullText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
@@ -127,13 +129,23 @@ public class SslServer
                                 _sharedData.SetData(liftIdWithoutPrefix, "Travel2", Travel2);
                                 _sharedData.SetData(liftIdWithoutPrefix, "VVVFErrors", VVVFErrors);
                                 _sharedData.SetData(liftIdWithoutPrefix, "Errors", Errors);
-
+                                /*
                                 var newMRL = new MRLclass();
-                                newMRL.UID = 5555555;
+                                newMRL.UID = "5555555";
                                 newMRL.telepitesHelye = "Z Bajor u. 7.";
-
                                 _sql_context.MRLclass.Add(newMRL);
-                                await _sql_context.SaveChangesAsync();
+                                */
+
+                                _sql_context.MRLmodel.Add(
+                                    new MRLmodel
+                                    {
+                                        UID = liftIdWithoutPrefix,
+                                        utolsoKapcsolataLifttel = TimeStamp
+                                    }
+                                );
+                                _sql_context.SaveChanges();
+                                
+                                //await _sql_context.SaveChangesAsync();
                             }
                             else
                             {

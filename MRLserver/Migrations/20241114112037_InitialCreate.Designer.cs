@@ -4,25 +4,28 @@ using MRLserver.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace MRLserver.Migrations
 {
-    [DbContext(typeof(MRLserverContext))]
-    partial class MRLserverContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(MRLservContext))]
+    [Migration("20241114112037_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("ProductVersion", "8.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MRLserver.Models.MRLclass", b =>
+            modelBuilder.Entity("MRLserver.Models.MRLmodel", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -30,19 +33,20 @@ namespace MRLserver.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("UID")
-                        .HasColumnType("int");
+                    b.Property<string>("UID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("karbantarto")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("kovetkezoKarbantartas")
+                    b.Property<DateTime?>("kovetkezoKarbantartas")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("telepitesHelye")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("telepitesIdeje")
+                    b.Property<DateTime?>("telepitesIdeje")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("telepitesPozicioja")
@@ -51,15 +55,15 @@ namespace MRLserver.Migrations
                     b.Property<string>("telepitestVegezte")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("utolsoKapcsolataLifttel")
+                    b.Property<DateTime?>("utolsoKapcsolataLifttel")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("utolsoKarbantartasIdeje")
+                    b.Property<DateTime?>("utolsoKarbantartasIdeje")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");
 
-                    b.ToTable("MRLclass");
+                    b.ToTable("MRLmodel");
                 });
 #pragma warning restore 612, 618
         }

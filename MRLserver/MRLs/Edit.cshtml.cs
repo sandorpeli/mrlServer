@@ -13,15 +13,15 @@ namespace MRLserver.MRLs
 {
     public class EditModel : PageModel
     {
-        private readonly MRLserver.Data.MRLserverContext _context;
+        private readonly MRLserver.Data.MRLservContext _context;
 
-        public EditModel(MRLserver.Data.MRLserverContext context)
+        public EditModel(MRLserver.Data.MRLservContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public MRLclass MRLclass { get; set; } = default!;
+        public MRLmodel MRLmodel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,12 +30,12 @@ namespace MRLserver.MRLs
                 return NotFound();
             }
 
-            var mrlclass =  await _context.MRLclass.FirstOrDefaultAsync(m => m.ID == id);
-            if (mrlclass == null)
+            var mrlmodel =  await _context.MRLmodel.FirstOrDefaultAsync(m => m.ID == id);
+            if (mrlmodel == null)
             {
                 return NotFound();
             }
-            MRLclass = mrlclass;
+            MRLmodel = mrlmodel;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace MRLserver.MRLs
                 return Page();
             }
 
-            _context.Attach(MRLclass).State = EntityState.Modified;
+            _context.Attach(MRLmodel).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace MRLserver.MRLs
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MRLclassExists(MRLclass.ID))
+                if (!MRLmodelExists(MRLmodel.ID))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace MRLserver.MRLs
             return RedirectToPage("./Index");
         }
 
-        private bool MRLclassExists(int id)
+        private bool MRLmodelExists(int id)
         {
-            return _context.MRLclass.Any(e => e.ID == id);
+            return _context.MRLmodel.Any(e => e.ID == id);
         }
     }
 }

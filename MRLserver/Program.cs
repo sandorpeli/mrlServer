@@ -26,8 +26,8 @@ builder.WebHost.ConfigureKestrel(options =>
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<MRLserverContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MRLserverContext") ?? throw new InvalidOperationException("Connection string 'MRLserverContext' not found.")));
+builder.Services.AddDbContext<MRLservContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MRLservContext") ?? throw new InvalidOperationException("Connection string 'MRLservContext' not found.")));
 
 var app = builder.Build();
 
@@ -50,9 +50,9 @@ app.MapRazorPages();
 
 var runner = app.RunAsync();
 
-var optionsBuilder = new DbContextOptionsBuilder<MRLserverContext>();
-optionsBuilder.UseSqlServer("MRLserverContext");
-using var context = new MRLserverContext(optionsBuilder.Options);
+var optionsBuilder = new DbContextOptionsBuilder<MRLservContext>();
+optionsBuilder.UseSqlServer(builder.Configuration.GetConnectionString("MRLservContext"));
+using var context = new MRLservContext(optionsBuilder.Options);
 
 SslServer mySslServer = new SslServer(sharedData, context);
 

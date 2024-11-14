@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using MRLserver.Models;
 using System.Collections.Generic;
 using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -10,6 +12,7 @@ namespace MRLserver.Pages
     {
         private readonly SharedMRLdata _sharedData;
         private readonly ILogger<IndexModel> _logger;
+        private readonly MRLserver.Data.MRLservContext _context;
 
         public string ProgramOutput { get; set; }
         public string telepitesHelye { get; set; }
@@ -24,10 +27,11 @@ namespace MRLserver.Pages
 
 
         // Konstruktor injekcióval kapja meg a sharedData-t
-        public IndexModel(SharedMRLdata sharedData)
+        public IndexModel(SharedMRLdata sharedData, MRLserver.Data.MRLservContext context)
         {
             _sharedData = sharedData;
             telepitesHelye = "Z telephely";
+            _context = context;
         }
 /*
         public IndexModel(ILogger<IndexModel> logger)
@@ -54,6 +58,18 @@ namespace MRLserver.Pages
                 string fullText = myID;
                 fullText = fullText + "\n" + TimeStamp.ToString("yyyy.MM.dd HH:mm:ss") + "\n" + DoorStateA + "\n" + DoorStateB + "\n" + ElevatorState + "\n" + Travel1 + ", " + Travel2 + "\n" + string.Join(",", VVVFErrors) + "\n" + Errors;
                 ProgramOutput = fullText;
+
+                var mrlmodel = _context.MRLmodel
+                    .Where(m => m.UID == "313437303139510B00330027")
+                    .OrderByDescending(m => m.ID) // assuming 'Id' is the primary key or a field for ordering
+                    .FirstOrDefault();
+
+                if (mrlmodel != null)
+                {
+                    if (mrlmodel.utolsoKapcsolataLifttel.HasValue) {
+                        utolsoKapcsolataLifttel = mrlmodel.utolsoKapcsolataLifttel.ToString();
+                    }
+                }
             }
         }
 
