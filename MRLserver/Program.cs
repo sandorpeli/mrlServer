@@ -1,5 +1,9 @@
 using MRLserver;
 using System.Net;
+using System.Net.Sockets;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MRLserver.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +26,8 @@ builder.WebHost.ConfigureKestrel(options =>
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<MRLserverContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MRLserverContext") ?? throw new InvalidOperationException("Connection string 'MRLserverContext' not found.")));
 
 var app = builder.Build();
 
@@ -42,8 +48,16 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-SslServer mySslServer = new SslServer(sharedData);
+var runner = app.RunAsync();
 
-app.Run();
+var optionsBuilder = new DbContextOptionsBuilder<MRLserverContext>();
+optionsBuilder.UseSqlServer("MRLserverContext");
+using var context = new MRLserverContext(optionsBuilder.Options);
 
+SslServer mySslServer = new SslServer(sharedData, context);
+
+// Register MyService
+//builder.Services.AddScoped<SslServer>();
+
+await runner;
 

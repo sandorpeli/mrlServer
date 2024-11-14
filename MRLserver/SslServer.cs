@@ -7,14 +7,19 @@ using System.Security.Authentication;
 using System.Text;
 using MRLserver;
 using System.Text.RegularExpressions;
+using MRLserver.Data;
+using MRLserver.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class SslServer
 {
     private static X509Certificate2 serverCertificate;
     private SharedMRLdata _sharedData;
+    private readonly MRLserverContext _sql_context;
 
-    public SslServer(SharedMRLdata sharedData)
+    public SslServer(SharedMRLdata sharedData, MRLserverContext sql_context)
 	{
+        _sql_context = sql_context;  // _context is now available for use in this class
         _sharedData = sharedData;
         // Load the SSL certificate (assuming it’s in the current directory).
         serverCertificate = new X509Certificate2("Certificate/cacertificate.pfx", "LifonOrcaMRL5687"); // Update with your certificate path and password
@@ -122,6 +127,13 @@ public class SslServer
                                 _sharedData.SetData(liftIdWithoutPrefix, "Travel2", Travel2);
                                 _sharedData.SetData(liftIdWithoutPrefix, "VVVFErrors", VVVFErrors);
                                 _sharedData.SetData(liftIdWithoutPrefix, "Errors", Errors);
+
+                                var newMRL = new MRLclass();
+                                newMRL.UID = 5555555;
+                                newMRL.telepitesHelye = "Z Bajor u. 7.";
+
+                                _sql_context.MRLclass.Add(newMRL);
+                                await _sql_context.SaveChangesAsync();
                             }
                             else
                             {

@@ -1,0 +1,84 @@
+﻿@page
+@model MRLserver.MRLs.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].UID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].telepitesHelye)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].telepitestVegezte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].telepitesPozicioja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].karbantarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].telepitesIdeje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].utolsoKarbantartasIdeje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].kovetkezoKarbantartas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLclass[0].utolsoKapcsolataLifttel)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MRLclass) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telepitesHelye)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telepitestVegezte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telepitesPozicioja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.karbantarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telepitesIdeje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.utolsoKarbantartasIdeje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kovetkezoKarbantartas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.utolsoKapcsolataLifttel)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
