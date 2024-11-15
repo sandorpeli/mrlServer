@@ -1,0 +1,84 @@
+﻿@page
+@model MRLserver.MRLtelemetris.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].UID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].utolsoKapcsolataLifttel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].DoorStateA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].DoorStateB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].ElevatorState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].Travel1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].Travel2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].VVVFErrors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRLtelemetryModel[0].Errors)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MRLtelemetryModel) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.utolsoKapcsolataLifttel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoorStateA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoorStateB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElevatorState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Travel1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Travel2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VVVFErrors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Errors)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

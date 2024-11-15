@@ -9,10 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
+    //options.Listen(IPAddress.Parse("172.20.0.119"), 4243, listenOptions =>
     options.Listen(IPAddress.Any, 4243, listenOptions =>
     {
         listenOptions.UseHttps("Certificate/httpscertificate.pfx", "LifonOrcaMRL5687");
     });
+    /*
+    options.Listen(IPAddress.Any, 4242, listenOptions =>
+    {
+        listenOptions.UseHttps("Certificate/cacertificate.pfx", "LifonOrcaMRL5687");
+    });
+    */
 });
 
 SharedMRLdata sharedData = new SharedMRLdata();

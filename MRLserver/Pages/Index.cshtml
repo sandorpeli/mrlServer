@@ -14,53 +14,92 @@
     <!-- Buttons Section -->
     <div class="mt-4">
         <form method="post">
-            <button type="submit" class="btn btn-primary" name="action" value="button1">Refresh</button>
-            <button type="submit" class="btn btn-secondary" name="action" value="button2">Button 2</button>
-            <button type="submit" class="btn btn-success" name="action" value="button3">Button 3</button>
+            <button type="submit" class="btn btn-primary" name="action" value="button_refresh">Refresh</button>
+            <button type="submit" class="btn btn-secondary" name="action" value="button_formerly">Formerly record</button>
+            <button type="submit" class="btn btn-success" name="action" value="button_next">Next record</button>
         </form>
     </div><br>
 
-    <!-- Table with dark blue borders -->
-    <table style="width: 40%; margin-right: calc(80%); border-collapse: collapse; border: 5px solid #003366;">
-        <tbody>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s helye:<br></td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesHelye<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s poz&iacute;ci&oacute;ja:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesPozicioja<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Lift UID:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.UID<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;st v&eacute;gezte:<br></td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitestVegezte<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s ideje:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesIdeje<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Karbantart&oacute;:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.karbantarto<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Utols&oacute; karbantart&aacute;s:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.utolsoKarbantartasIdeje<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">K&ouml;vetkező karbantart&aacute;s:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.kovetkezoKarbantartas<br></td>
-            </tr>
-            <tr>
-                <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Utols&oacute; kapcsolat a lifttel:</td>
-                <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.utolsoKapcsolataLifttel<br></td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Flex container for tables -->
+    <div style="display: flex; justify-content: center; gap: 20px;">
+
+        <!-- Table with dark blue borders -->
+        <table style="width: 40%; border-collapse: collapse; border: 5px solid #003366;">
+            <tbody>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s helye:<br></td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesHelye<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s poz&iacute;ci&oacute;ja:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesPozicioja<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Lift UID:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.UID<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;st v&eacute;gezte:<br></td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitestVegezte<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Telep&iacute;t&eacute;s ideje:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.telepitesIdeje<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Karbantart&oacute;:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.karbantarto<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Utols&oacute; karbantart&aacute;s:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.utolsoKarbantartasIdeje<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">K&ouml;vetkező karbantart&aacute;s:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.kovetkezoKarbantartas<br></td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Utols&oacute; kapcsolat a lifttel:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.utolsoKapcsolataLifttel<br></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="width: 40%; border-collapse: collapse; border: 5px solid #003366;">
+            <tbody>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Records:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.Records</td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Record date:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.RecordDate</td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">A ajt&oacute;:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.DoorA</td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">B ajt&oacute;:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.DoorB</td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Menetsz&aacute;m:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.Travels</td>
+                </tr>
+                <tr>
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">VVVF hib&aacute;k:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.VVVFErrors_s</td>
+                </tr>
+                <tr style="height: 40%;">
+                    <!-- Adjust height as needed -->
+                    <td style="width: 47.3907%; padding: 10px; border: 1px solid #003366;">Hib&aacute;k:</td>
+                    <td style="width: 52.3612%; padding: 10px; border: 1px solid #003366;">@Model.Errors</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
     <p><br></p>
     <p>Learn about us: <a href="http://lifon.hu">&nbsp;link</a>.</p>
 </div>

@@ -46,6 +46,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TVJMc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Work/Lifon/MRL/MRL server/MRLserver/MRLtelemetris/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TVJMdGVsZW1ldHJpc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/MRLtelemetris/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TVJMdGVsZW1ldHJpc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/MRLtelemetris/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TVJMdGVsZW1ldHJpc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/MRLtelemetris/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TVJMdGVsZW1ldHJpc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/MRLtelemetris/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TVJMdGVsZW1ldHJpc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

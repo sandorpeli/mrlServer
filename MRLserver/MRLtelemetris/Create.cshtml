@@ -1,0 +1,74 @@
+﻿@page
+@model MRLserver.MRLtelemetris.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>MRLtelemetryModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.UID" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.UID" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.UID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.utolsoKapcsolataLifttel" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.utolsoKapcsolataLifttel" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.utolsoKapcsolataLifttel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.DoorStateA" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.DoorStateA" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.DoorStateA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.DoorStateB" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.DoorStateB" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.DoorStateB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.ElevatorState" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.ElevatorState" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.ElevatorState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.Travel1" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.Travel1" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.Travel1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.Travel2" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.Travel2" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.Travel2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.VVVFErrors" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.VVVFErrors" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.VVVFErrors" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MRLtelemetryModel.Errors" class="control-label"></label>
+                <input asp-for="MRLtelemetryModel.Errors" class="form-control" />
+                <span asp-validation-for="MRLtelemetryModel.Errors" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

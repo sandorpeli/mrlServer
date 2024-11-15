@@ -8,13 +8,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using MRLserver.Data;
 using MRLserver.Models;
+using System.ComponentModel.DataAnnotations;
+using System.Net.Http;
 
 
 public class SslServer
 {
     private static X509Certificate2 serverCertificate;
     private SharedMRLdata _sharedData;
-
+    private IPAddress inEPip;
     private readonly MRLservContext _sql_context;
 
     public SslServer(SharedMRLdata sharedData, MRLservContext sql_context)
@@ -46,6 +48,30 @@ public class SslServer
         {
             TcpClient client = await listener.AcceptTcpClientAsync();
             Console.WriteLine("Client connected.");
+
+            // Assuming 'tcpClient' is your connected TcpClient
+            var clientEndpoint = client.Client.RemoteEndPoint as System.Net.IPEndPoint;
+
+            if (clientEndpoint != null)
+            {
+                inEPip = clientEndpoint.Address;
+
+                string clientIp = clientEndpoint.Address.ToString();
+
+                if (clientEndpoint.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetworkV6)
+                {
+                    Console.WriteLine("Client IP (IPv6): " + clientIp);
+                }
+                else
+                {
+                    Console.WriteLine("Client IP (IPv4): " + clientIp);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Unable to retrieve client IP address.");
+            }
+
             _ = Task.Run(() => HandleClientAsync(client));
             Thread.Sleep(10);
         }
@@ -136,11 +162,30 @@ public class SslServer
                                 _sql_context.MRLclass.Add(newMRL);
                                 */
 
-                                _sql_context.MRLmodel.Add(
-                                    new MRLmodel
+                                // Find the last row with the matching UID
+                                var existingMRL = _sql_context.MRLmodel
+                                                   .Where(m => m.UID == "313437303139510B00330027")
+                                                   .OrderByDescending(m => m.ID)  // Assuming 'Id' is an auto-incremented primary key or timestamp
+                                                   .FirstOrDefault();
+
+                                if (existingMRL != null)
+                                {
+                                    existingMRL.utolsoKapcsolataLifttel = TimeStamp;
+                                    _sql_context.SaveChanges();
+                                }
+
+                                _sql_context.MRLtelemetryModel.Add(
+                                    new MRLtelemetryModel
                                     {
                                         UID = liftIdWithoutPrefix,
-                                        utolsoKapcsolataLifttel = TimeStamp
+                                        utolsoKapcsolataLifttel = TimeStamp,
+                                        DoorStateA = DoorStateA,
+                                        DoorStateB = DoorStateB,
+                                        ElevatorState = ElevatorState,
+                                        Travel1 = Travel1,
+                                        Travel2 = Travel2,
+                                        VVVFErrors = string.Join(",", VVVFErrors),
+                                        Errors = Errors
                                     }
                                 );
                                 _sql_context.SaveChanges();
@@ -158,6 +203,42 @@ public class SslServer
 
                     Thread.Sleep(10);
                 }
+
+                /*
+                // The IP address and port of the server you want to connect to
+                string ipAddress = inEPip.ToString(); // Example IP address
+                int port = 22; // Example port
+
+                // The message you want to send
+                string message = "Hello, TCP Server!";
+
+                try
+                {
+                    // Create a TcpClient instance
+                    using (TcpClient client2 = new TcpClient())
+                    {
+                        // Connect to the server
+                        client2.Connect(IPAddress.Parse(ipAddress), port);
+                        Console.WriteLine($"Connected to {ipAddress}:{port}");
+
+                        // Get the network stream to send data
+                        NetworkStream stream = client2.GetStream();
+
+                        // Convert the message to bytes and send it
+                        byte[] data = Encoding.ASCII.GetBytes(message);
+                        stream.Write(data, 0, data.Length);
+                        Console.WriteLine("Message sent.");
+
+                        // Close the connection
+                        stream.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred: {ex.Message}");
+                }
+                */
+
             }
         }
         catch (Exception ex)

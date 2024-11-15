@@ -1,0 +1,73 @@
+﻿@page
+@model MRLserver.MRLtelemetris.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MRLtelemetryModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.UID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.UID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.utolsoKapcsolataLifttel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.utolsoKapcsolataLifttel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.DoorStateA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.DoorStateA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.DoorStateB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.DoorStateB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.ElevatorState)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.ElevatorState)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.Travel1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.Travel1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.Travel2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.Travel2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.VVVFErrors)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.VVVFErrors)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRLtelemetryModel.Errors)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRLtelemetryModel.Errors)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.MRLtelemetryModel.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

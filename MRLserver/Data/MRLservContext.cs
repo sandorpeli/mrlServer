@@ -15,5 +15,6 @@ namespace MRLserver.Data
         }
 
         public DbSet<MRLserver.Models.MRLmodel> MRLmodel { get; set; } = default!;
+        public DbSet<MRLserver.Models.MRLtelemetryModel> MRLtelemetryModel { get; set; } = default!;
     }
 }
