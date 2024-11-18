@@ -39,5 +39,30 @@ namespace MRLserver
                 throw new KeyNotFoundException($"A(z) {id} azonosítóval rendelkező adat nem található.");
             }
         }
+
+        // Delete a specific subKey from a given key
+        public bool DeleteSubKey(string key, string subKey)
+        {
+            if (data.TryGetValue(key, out var subDict))
+            {
+                if (subDict.Remove(subKey))
+                {
+                    // If the dictionary is now empty, optionally remove the top-level key
+                    if (subDict.Count == 0)
+                    {
+                        data.TryRemove(key, out _);
+                    }
+                    return true;
+                }
+            }
+            return false; // Return false if key or subKey not found
+        }
+
+        // Delete the entire top-level key
+        public bool DeleteKey(string key)
+        {
+            return data.TryRemove(key, out _);
+        }
+
     }
 }

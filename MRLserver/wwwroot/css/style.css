@@ -1,0 +1,25 @@
+﻿/* Sidebar Styling */
+/* Add this to your CSS file (e.g., site.css or style.css) */
+.sidebar {
+    background-color: #ADD8E6; /* Light blue color */
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 20px; /* Padding for spacing */
+}
+
+.nav-item {
+    margin: 10px 0; /* Add spacing between nav items */
+}
+
+.nav-link {
+    color: #000; /* Black color for the text */
+    font-weight: bold; /* Bold the text */
+}
+
+    .nav-link:hover {
+        color: #0056b3; /* Darker color on hover */
+    }
+
+/* Adjust the width of the sidebar */
+.col-md-3 {
+    width: 250px; /* Adjust this value for the desired sidebar width */
+}

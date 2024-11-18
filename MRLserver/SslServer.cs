@@ -375,10 +375,21 @@ public class SslServer
             // Sleep for 10 seconds or your desired period
             await Task.Delay(10000);  // Send a message every 10 seconds
             byte[] messageToSend = Encoding.UTF8.GetBytes("_Com:AuthTravel," + cnt + "&");
-            cnt++;
+
+            var data = _sharedData.GetData("313437303139510B00330027", "sendToFloor");
+
+            if (data is not null and > (object)0)
+            {
+                messageToSend = Encoding.UTF8.GetBytes("_Com:SendToFloor," + (int)data + "&");
+                _sharedData.DeleteSubKey("313437303139510B00330027", "sendToFloor");
+            } else
+            {
+                cnt++;
+            }
+
             // Send the message asynchronously
             await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
-            Console.WriteLine("Sent periodic message: " + messageToSend);
+            Console.WriteLine("Sent periodic message: " + messageToSend.ToString());
         }
     }
 

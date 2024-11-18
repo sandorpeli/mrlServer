@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6GITI7iXIVg0kdtwOHN71qIfq/Xra2e/sdDhwmemJCs=",
+  "Hash": "5NzJ4sYqtzTajCdePzvv3ly3lIXqnZ+5l5hPYHdcBKo=",
   "Source": "MRLserver",
   "BasePath": "_content/MRLserver",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\css\\style.css",
+      "SourceId": "MRLserver",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\",
+      "BasePath": "_content/MRLserver",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uumittlhq9",
+      "Integrity": "NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\favicon.ico",
@@ -1399,6 +1420,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 12:25:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.uumittlhq9.css",
+      "AssetFile": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 12:25:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uumittlhq9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA="
         }
       ]
     },
@@ -6263,7 +6366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 14 Nov 2024 11:11:24 GMT"
+          "Value": "Mon, 18 Nov 2024 14:00:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +6403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 14 Nov 2024 11:11:24 GMT"
+          "Value": "Mon, 18 Nov 2024 14:00:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6345,7 +6448,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 14 Nov 2024 11:11:24 GMT"
+          "Value": "Mon, 18 Nov 2024 14:00:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +6493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 14 Nov 2024 11:11:24 GMT"
+          "Value": "Mon, 18 Nov 2024 14:00:31 GMT"
         },
         {
           "Name": "Cache-Control",
