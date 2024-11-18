@@ -77,7 +77,7 @@ public class SslServer
         }
     }
 
-    private async Task HandleClientAsync(TcpClient client)
+        private async Task HandleClientAsync(TcpClient client)
     {
         try
         {
@@ -87,10 +87,20 @@ public class SslServer
                 await sslStream.AuthenticateAsServerAsync(serverCertificate, clientCertificateRequired: false, checkCertificateRevocation: true);
                 Console.WriteLine("SSL authentication successful.");
 
+                _ = Task.Run(async () => await SendMessagesPeriodically(sslStream));  // Modified line: Periodic sending
+
+                DateTime lastSendTime = DateTime.UtcNow;
                 // Olvasás/írás a klienssel (példaként)
                 byte[] buffer = new byte[4096];
                 while (true)
                 {
+                    // Check if the client is still connected
+                    if (!client.Connected)
+                    {
+                        Console.WriteLine("Client disconnected.");
+                        break;
+                    }
+
                     int bytesRead = await sslStream.ReadAsync(buffer, 0, buffer.Length);
                     // Ha a bytesRead 0, akkor a kliens lecsatlakozott
                     if (bytesRead == 0)
@@ -106,7 +116,7 @@ public class SslServer
                         {
                             break;
                         }
-                        else
+                        else if (fullText.Contains("MessageEnd"))
                         {
                             // Regular expression to match the value after "_Lift ID: "
                             string pattern = @"_Lift ID:\s(0x[0-9A-Fa-f]+)";
@@ -197,11 +207,109 @@ public class SslServer
                                 Console.WriteLine("Lift ID not found.");
                             }
                         }
+                        else if (fullText.Contains("RsponseEnd"))
+                        {
+                            // Regular expression to match the value after "_Lift ID: "
+                            string pattern = @"_Lift ID:\s(0x[0-9A-Fa-f]+)";
+
+                            Match match = Regex.Match(fullText, pattern);
+
+                            if (match.Success)
+                            {
+                                string liftIdHex = match.Groups[1].Value; // Hex string (including 0x prefix)
+                                string liftIdWithoutPrefix = liftIdHex.Substring(2); // Remove "0x" prefix
+
+                                //_sharedData.SetData(liftIdWithoutPrefix, "myID", liftIdWithoutPrefix);  // Különböző típusú adatokat is beállíthatunk
+                                int resp = int.Parse(Regex.Match(fullText, @"_Response:(\d+)").Groups[1].Value);
+                                Console.WriteLine("Response received: " + liftIdWithoutPrefix + ", ", +resp);
+
+
+                                /*
+                                DateTime TimeStamp;
+                                int DoorStateA;
+                                int DoorStateB;
+                                int ElevatorState;
+                                int Travel1;
+                                int Travel2;
+                                int[] VVVFErrors = new int[5];
+                                string Errors;
+
+                                // Regex-ek az egyes értékek kinyeréséhez
+                                TimeStamp = DateTime.Parse(Regex.Match(fullText, @"_TimeStamp:\s*(\d{4}\.\d{2}\.\d{2} \d{2}:\d{2}:\d{2})").Groups[1].Value);
+                                DoorStateA = int.Parse(Regex.Match(fullText, @"_DoorStateA:\s*(\d+)").Groups[1].Value);
+                                DoorStateB = int.Parse(Regex.Match(fullText, @"_DoorStateB:\s*(\d+)").Groups[1].Value);
+                                ElevatorState = int.Parse(Regex.Match(fullText, @"_ElevatorState:(\d+)").Groups[1].Value);
+
+                                // Travells kinyerése és felosztása
+                                var travelMatch = Regex.Match(fullText, @"_Travells:\s*(\d+)/(\d+)");
+                                Travel1 = int.Parse(travelMatch.Groups[1].Value);
+                                Travel2 = int.Parse(travelMatch.Groups[2].Value);
+
+                                // VVVF errors kinyerése és tömbbe rendezése
+                                var vvErrors = Regex.Match(fullText, @"_VVVF errors:\s*([0-9,]+)").Groups[1].Value;
+                                VVVFErrors = Array.ConvertAll(vvErrors.Split(','), int.Parse);
+
+                                // Errors kinyerése
+                                Errors = Regex.Match(fullText, @"_Errors:\s*(\w+)").Groups[1].Value;
+
+                                _sharedData.SetData(liftIdWithoutPrefix, "TimeStamp", TimeStamp);
+                                _sharedData.SetData(liftIdWithoutPrefix, "DoorStateA", DoorStateA);
+                                _sharedData.SetData(liftIdWithoutPrefix, "DoorStateB", DoorStateB);
+                                _sharedData.SetData(liftIdWithoutPrefix, "ElevatorState", ElevatorState);
+                                _sharedData.SetData(liftIdWithoutPrefix, "Travel1", Travel1);
+                                _sharedData.SetData(liftIdWithoutPrefix, "Travel2", Travel2);
+                                _sharedData.SetData(liftIdWithoutPrefix, "VVVFErrors", VVVFErrors);
+                                _sharedData.SetData(liftIdWithoutPrefix, "Errors", Errors);
+                                */
+
+                                /*
+                                var newMRL = new MRLclass();
+                                newMRL.UID = "5555555";
+                                newMRL.telepitesHelye = "Z Bajor u. 7.";
+                                _sql_context.MRLclass.Add(newMRL);
+                                */
+
+                                /*
+                                // Find the last row with the matching UID
+                                var existingMRL = _sql_context.MRLmodel
+                                                   .Where(m => m.UID == "313437303139510B00330027")
+                                                   .OrderByDescending(m => m.ID)  // Assuming 'Id' is an auto-incremented primary key or timestamp
+                                                   .FirstOrDefault();
+
+                                if (existingMRL != null)
+                                {
+                                    existingMRL.utolsoKapcsolataLifttel = TimeStamp;
+                                    _sql_context.SaveChanges();
+                                }
+
+                                _sql_context.MRLtelemetryModel.Add(
+                                    new MRLtelemetryModel
+                                    {
+                                        UID = liftIdWithoutPrefix,
+                                        utolsoKapcsolataLifttel = TimeStamp,
+                                        DoorStateA = DoorStateA,
+                                        DoorStateB = DoorStateB,
+                                        ElevatorState = ElevatorState,
+                                        Travel1 = Travel1,
+                                        Travel2 = Travel2,
+                                        VVVFErrors = string.Join(",", VVVFErrors),
+                                        Errors = Errors
+                                    }
+                                );
+                                _sql_context.SaveChanges();
+                                */
+                                //await _sql_context.SaveChangesAsync();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Lift ID not found.");
+                            }
+                        }
                     }
 
                     Console.WriteLine("Received: " + Encoding.UTF8.GetString(buffer, 0, bytesRead));
 
-                    Thread.Sleep(10);
+                    Thread.Sleep(20);
                 }
 
                 /*
@@ -258,6 +366,21 @@ public class SslServer
         }
     }
 
+    private async Task SendMessagesPeriodically(SslStream sslStream)
+    {
+        int cnt = 100;
+
+        while (true)
+        {
+            // Sleep for 10 seconds or your desired period
+            await Task.Delay(10000);  // Send a message every 10 seconds
+            byte[] messageToSend = Encoding.UTF8.GetBytes("_Com:AuthTravel," + cnt + "&");
+            cnt++;
+            // Send the message asynchronously
+            await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
+            Console.WriteLine("Sent periodic message: " + messageToSend);
+        }
+    }
 
     //------------ Nem használt
     private static void HandleClient(TcpClient client)

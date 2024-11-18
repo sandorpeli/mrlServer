@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MRLserver.Models;
+using NuGet.Packaging.Signing;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -164,13 +165,14 @@ namespace MRLserver.Pages
 
         public IActionResult OnPost()
         {
+
             // Handle different button actions
             string action = Request.Form["action"];
             switch (action)
             {
                 case "button_refresh":
                     OnGet();
-                    SendToApi.SendMessageAsync("Kilroy was here").GetAwaiter().GetResult();
+                    //SendToApi.SendMessageAsync("Kilroy was here").GetAwaiter().GetResult();
                     break;
                 case "button_formerly":
                     int rowCount = _context.MRLtelemetryModel
@@ -196,6 +198,19 @@ namespace MRLserver.Pages
                         _sharedData.SetData("InternalData", "telemetry_record_shift", telemetry_record_shift);
                         Console.WriteLine("telemetry_record_shift--: " + telemetry_record_shift);
                         //OnGet();
+                    }
+                    break;
+                case "button_sendtofloor":
+                    string sendToFloorValue = Request.Form["sendtofloor"];
+                    // Validate and process the value
+                    if (int.TryParse(sendToFloorValue, out int sendToFloor) && sendToFloor >= 1 && sendToFloor <= 30)
+                    {
+                        _sharedData.SetData("313437303139510B00330027", "sendToFloor", sendToFloor);
+                        Console.WriteLine($"Floor number set to: {sendToFloor}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid floor number entered. Must be between 1 and 30.");
                     }
                     break;
                 default:

@@ -257,3 +257,7 @@ D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\refint\MRLserver.dll
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\MRLserver.pdb
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\MRLserver.genruntimeconfig.cache
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\ref\MRLserver.dll
+D:\Work\Lifon\MRL\MRL server\MRLserver\bin\Debug\net8.0\MRLserver.staticwebassets.endpoints.json
+D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets\msbuild.MRLserver.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

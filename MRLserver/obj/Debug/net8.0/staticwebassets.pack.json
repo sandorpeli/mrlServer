@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MRLserver.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MRLserver.bundle.scp.css"
+      "PackagePath": "staticwebassets\\MRLserver.sh25unyaas.bundle.scp.css"
     },
     {
       "Id": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MRLserver.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MRLserver.Microsoft.AspNetCore.StaticWebAssets.props",

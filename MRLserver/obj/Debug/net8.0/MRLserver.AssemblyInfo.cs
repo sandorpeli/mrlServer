@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+790d1f5076e674616599a4e9391d63b0992e727d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8092aab2a8d2630ac1d23545c022d1e5b7f9f584")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
