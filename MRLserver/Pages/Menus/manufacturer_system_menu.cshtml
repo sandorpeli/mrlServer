@@ -1,0 +1,107 @@
+﻿@page
+@model MRLserver.Pages.manufacturer_system_menuModel
+@{
+}
+
+
+<head>
+    <style>
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .item3 {
+            grid-area: item3;
+        }
+
+        .item4 {
+            grid-area: item4;
+        }
+
+        .item5 {
+            grid-area: item5;
+        }
+
+        .item6 {
+            grid-area: item6;
+        }
+
+        .item7 {
+            grid-area: item7;
+        }
+
+        .item8 {
+            grid-area: item8;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'item1 item2'
+                'item3 item4'
+                'item5 item6'
+                'item7 item8';
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <h1>Rendszer menü</h1>
+    </div>
+    <br />
+    <br />
+
+    <div class="grid-container">
+        <form method="post">
+            <div class="grid-item item1" onclick="this.closest('form').submit();">
+                Kimenet választás
+            </div>
+            <input type="hidden" name="action" value="Kimenet">
+        </form>
+
+        <form method="post">
+            <div class="grid-item item2" onclick="this.closest('form').submit();">
+                Bemenet választás
+            </div>
+            <input type="hidden" name="action" value="Bemenet">
+        </form>
+
+        <form method="post">
+            <div class="grid-item item3" onclick="this.closest('form').submit();">
+                Modul I/O választás
+            </div>
+            <input type="hidden" name="action" value="ModulIO">
+        </form>
+
+        <form method="post">
+            <div class="grid-item item4" onclick="this.closest('form').submit();">
+                CDP funkció választás
+            </div>
+            <input type="hidden" name="action" value="CDP">
+        </form>
+
+        <div class="grid-item item5">Mentés</div>
+        <div class="grid-item item6">Engedélyező kód</div>
+        <div class="grid-item item7">Engedélyezett kapocslási szám</div>
+        <div class="grid-item item8">SW verzió</div>
+    </div>
+
+</body>

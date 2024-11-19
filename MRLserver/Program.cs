@@ -4,6 +4,8 @@ using System.Net.Sockets;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MRLserver.Data;
+using MRLserver.Pages.Shared;
+using MRLserver.Pages.menutexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,15 @@ builder.WebHost.ConfigureKestrel(options =>
 
 SharedMRLdata sharedData = new SharedMRLdata();
 builder.Services.AddSingleton(sharedData);
+
+/// csv feldolgozás
+// singleton version
+builder.Services.AddSingleton<csv_text_data>(new csv_text_data());  // Így csak egyszer fut le
+
+// Register CsvTextData as a transient service
+//builder.Services.AddTransient<csv_text_data>(provider => new csv_text_data());    // Minden weboldal nyitásánál lefutna
+/// EOF csv feldolgozás
+
 /*
 builder.WebHost.ConfigureKestrel(options =>
 {

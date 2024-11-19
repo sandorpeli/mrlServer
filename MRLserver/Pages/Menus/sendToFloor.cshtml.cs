@@ -2,15 +2,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
-namespace MRLserver.Pages
+namespace MRLserver.Pages.Menus
 {
     public class SendToFloorModel : PageModel
     {
         private readonly SharedMRLdata _sharedData;
-        private readonly MRLserver.Data.MRLservContext _context;
+        private readonly Data.MRLservContext _context;
 
         // Konstruktor injekcióval kapja meg a sharedData-t
-        public SendToFloorModel(SharedMRLdata sharedData, MRLserver.Data.MRLservContext context)
+        public SendToFloorModel(SharedMRLdata sharedData, Data.MRLservContext context)
         {
             _sharedData = sharedData;
             _context = context;
@@ -31,7 +31,7 @@ namespace MRLserver.Pages
                     // Validate and process the value
                     if (int.TryParse(sendToFloorValue, out int sendToFloor) && sendToFloor >= 1 && sendToFloor <= 30)
                     {
-                        _sharedData.SetData("313437303139510B00330027", "sendToFloor", (int)sendToFloor);
+                        _sharedData.SetData("313437303139510B00330027", "sendToFloor", sendToFloor);
                         Console.WriteLine($"Floor number set to: {sendToFloor}");
                     }
                     else

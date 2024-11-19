@@ -2,15 +2,19 @@
 
 <!-- _Sidebar.cshtml -->
 <div class="sidebar bg-lightblue">
+    <div class="sidebar-image-container">
+        <img src="@Url.Content("~/images/lifon_logo.png")" alt="Lifon logo" class="sidebar-image">
+    </div>
+
     <ul class="nav flex-column">
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Page("/Index")">Home</a>
+            <a class="nav-link" href="@Url.Content("/Index")">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Page("/sendToFloor")">Küldés emeletre</a>
+            <a class="nav-link" href="@Url.Content("~/Menus/sendToFloor")">Küldés emeletre</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Page("/otherPage")">Other Page</a>
+            <a class="nav-link" href="@Url.Content("~/Menus/manufacturer_system_menu")">Rendszer</a>
         </li>
     </ul>
 </div>

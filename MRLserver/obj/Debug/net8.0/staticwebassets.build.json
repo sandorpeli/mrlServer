@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5NzJ4sYqtzTajCdePzvv3ly3lIXqnZ+5l5hPYHdcBKo=",
+  "Hash": "BJs2o9ECHntvnFUcXa4k+bmadx1iqv+UzuiUcu0NRtA=",
   "Source": "MRLserver",
   "BasePath": "_content/MRLserver",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uumittlhq9",
-      "Integrity": "NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=",
+      "Fingerprint": "q8jkqaweb5",
+      "Integrity": "auA7LIPqphhY+V+KK6NFB/QkP+LZHepf0NpIOkA+SIQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\images\\lifon_logo.png",
+      "SourceId": "MRLserver",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\",
+      "BasePath": "_content/MRLserver",
+      "RelativePath": "images/lifon_logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hwmumw20vc",
+      "Integrity": "j7pEiNN2taCV+n0ZQNCQIE0NXom1rG+c8gRzPkq3khI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lifon_logo.png"
     },
     {
       "Identity": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\js\\site.js",
@@ -1434,7 +1455,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "664"
+          "Value": "2421"
         },
         {
           "Name": "Content-Type",
@@ -1442,11 +1463,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=\""
+          "Value": "\"auA7LIPqphhY+V+KK6NFB/QkP+LZHepf0NpIOkA+SIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 12:25:59 GMT"
+          "Value": "Tue, 19 Nov 2024 07:47:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1456,12 +1477,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA="
+          "Value": "sha256-auA7LIPqphhY+V+KK6NFB/QkP+LZHepf0NpIOkA+SIQ="
         }
       ]
     },
     {
-      "Route": "css/style.uumittlhq9.css",
+      "Route": "css/style.q8jkqaweb5.css",
       "AssetFile": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1471,7 +1492,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "664"
+          "Value": "2421"
         },
         {
           "Name": "Content-Type",
@@ -1479,11 +1500,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA=\""
+          "Value": "\"auA7LIPqphhY+V+KK6NFB/QkP+LZHepf0NpIOkA+SIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 12:25:59 GMT"
+          "Value": "Tue, 19 Nov 2024 07:47:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1493,7 +1514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uumittlhq9"
+          "Value": "q8jkqaweb5"
         },
         {
           "Name": "label",
@@ -1501,7 +1522,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NqXVZY0c5bxyhnJDIFxOFaMGD1ss+CtIr+gXF1cdbmA="
+          "Value": "sha256-auA7LIPqphhY+V+KK6NFB/QkP+LZHepf0NpIOkA+SIQ="
         }
       ]
     },
@@ -1584,6 +1605,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/lifon_logo.hwmumw20vc.png",
+      "AssetFile": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\images\\lifon_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7pEiNN2taCV+n0ZQNCQIE0NXom1rG+c8gRzPkq3khI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 17 Aug 2022 11:51:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwmumw20vc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/lifon_logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7pEiNN2taCV+n0ZQNCQIE0NXom1rG+c8gRzPkq3khI="
+        }
+      ]
+    },
+    {
+      "Route": "images/lifon_logo.png",
+      "AssetFile": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\images\\lifon_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7pEiNN2taCV+n0ZQNCQIE0NXom1rG+c8gRzPkq3khI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 17 Aug 2022 11:51:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7pEiNN2taCV+n0ZQNCQIE0NXom1rG+c8gRzPkq3khI="
         }
       ]
     },

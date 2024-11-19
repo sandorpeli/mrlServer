@@ -261,3 +261,4 @@ D:\Work\Lifon\MRL\MRL server\MRLserver\bin\Debug\net8.0\MRLserver.staticwebasset
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets\msbuild.MRLserver.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Work\Lifon\MRL\MRL server\MRLserver\bin\Debug\net8.0\CsvHelper.dll

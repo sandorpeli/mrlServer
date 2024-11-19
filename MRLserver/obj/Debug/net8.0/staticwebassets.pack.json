@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\images\\lifon_logo.png",
+      "PackagePath": "staticwebassets\\images\\lifon_logo.png"
+    },
+    {
       "Id": "D:\\Work\\Lifon\\MRL\\MRL server\\MRLserver\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

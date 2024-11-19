@@ -76,12 +76,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Menus/manufacturer_system_menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudXNcbWFudWZhY3R1cmVyX3N5c3RlbV9tZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/sendToFloor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2VuZFRvRmxvb3IuY3NodG1s
+[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Menus/sendToFloor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudXNcc2VuZFRvRmxvb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Menus/setOutputPin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudXNcc2V0T3V0cHV0UGluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Work/Lifon/MRL/MRL server/MRLserver/Pages/Shared/_Sidebar.cshtml]

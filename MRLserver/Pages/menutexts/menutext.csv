@@ -1,0 +1,1031 @@
+/* Adat file az MRL menüjének
+*  A file automatikusan generalt excel-bol, ne modositsd.
+*  Készült: 2023. 06. 07. 
+*  Generator macro Build No.: V1.1 */
+
+menu_Map| 206 |
+ 1 | 0 | 0 | 5010 | 3 | 3 |
+ 1 | 0 | 0 | 5161 | 3 | 3 |
+ 1 | 0 | 0 | 5113 | 3 | 3 |
+ 1 | 0 | 0 | 5177 | 3 | 3 |
+ 1 | 0 | 0 | 5196 | 3 | 3 |
+ 1 | 0 | 0 | 5222 | 3 | 3 |
+ 1 | 1001 | 0 | 5114 | 3 | 3 |
+ 1 | 1001 | 0 | 5115 | 3 | 3 |
+ 1 | 1001 | 0 | 5116 | 3 | 3 |
+ 1 | 1001 | 0 | 5117 | 3 | 3 |
+ 1 | 1002 | 0 | 5106 | 3 | 3 |
+ 1 | 1002 | 0 | 5107 | 3 | 3 |
+ 1 | 1002 | 0 | 5109 | 3 | 3 |
+ 1 | 1002 | 0 | 5110 | 3 | 3 |
+ 1 | 1002 | 0 | 5111 | 3 | 3 |
+ 1 | 1002 | 0 | 5112 | 3 | 3 |
+ 1 | 1002 | 0 | 5199 | 3 | 3 |
+ 1 | 1002 | 0 | 5215 | 3 | 3 |
+ 1 | 1000 | 0 | 5011 | 3 | 3 |
+ 1 | 1000 | 0 | 5012 | 3 | 3 |
+ 1 | 1000 | 0 | 5013 | 3 | 3 |
+ 1 | 1000 | 0 | 5206 | 3 | 3 |
+ 2 | 0 | 0 | 5118 | 0 | 3 |
+ 2 | 0 | 0 | 5119 | 3 | 3 |
+ 2 | 0 | 0 | 5185 | 1 | 3 |
+ 2 | 0 | 0 | 5217 | 1 | 3 |
+ 2 | 1004 | 0 | 5127 | 1 | 3 |
+ 2 | 1004 | 0 | 5128 | 1 | 3 |
+ 2 | 1003 | 0 | 5008 | 3 | 5 |
+ 2 | 1003 | 0 | 5007 | 0 | 0 |
+ 2 | 1003 | 0 | 5120 | 3 | 5 |
+ 2 | 1003 | 0 | 5121 | 1 | 3 |
+ 2 | 1003 | 0 | 5124 | 1 | 3 |
+ 2 | 1003 | 0 | 5154 | 3 | 5 |
+ 2 | 1003 | 0 | 5155 | 3 | 5 |
+ 2 | 1003 | 0 | 5156 | 3 | 5 |
+ 2 | 1003 | 0 | 5157 | 3 | 5 |
+ 2 | 1003 | 0 | 5158 | 3 | 5 |
+ 2 | 1003 | 0 | 5159 | 3 | 5 |
+ 2 | 1003 | 0 | 5176 | 1 | 1 |
+ 3 | 1005 | 0 | 5014 | 3 | 3 |
+ 3 | 1005 | 0 | 5015 | 3 | 3 |
+ 3 | 1005 | 0 | 5016 | 1 | 2 |
+ 3 | 1005 | 0 | 5162 | 3 | 3 |
+ 3 | 1005 | 0 | 5031 | 3 | 3 |
+ 3 | 1005 | 0 | 5034 | 3 | 3 |
+ 3 | 1005 | 0 | 5200 | 3 | 3 |
+ 3 | 1005 | 0 | 5129 | 3 | 3 |
+ 3 | 1005 | 0 | 5090 | 3 | 3 |
+ 3 | 1005 | 0 | 5076 | 3 | 3 |
+ 3 | 1005 | 0 | 5077 | 3 | 3 |
+ 3 | 1005 | 0 | 5078 | 3 | 3 |
+ 3 | 1005 | 0 | 5142 | 3 | 3 |
+ 3 | 1005 | 0 | 5160 | 3 | 3 |
+ 3 | 1005 | 0 | 5163 | 3 | 3 |
+ 3 | 1005 | 0 | 5190 | 3 | 3 |
+ 3 | 1005 | 0 | 5164 | 3 | 3 |
+ 3 | 1005 | 0 | 5141 | 0 | 0 |
+ 3 | 1005 | 0 | 5143 | 3 | 3 |
+ 3 | 1005 | 0 | 5218 | 3 | 3 |
+ 3 | 1005 | 0 | 5182 | 3 | 3 |
+ 3 | 1005 | 0 | 5188 | 3 | 3 |
+ 3 | 1005 | 0 | 5195 | 3 | 3 |
+ 3 | 1007 | 0 | 5201 | 3 | 3 |
+ 3 | 1007 | 0 | 5202 | 3 | 3 |
+ 3 | 1007 | 0 | 5203 | 3 | 3 |
+ 3 | 1007 | 0 | 5204 | 3 | 3 |
+ 3 | 1007 | 0 | 5216 | 3 | 3 |
+ 3 | 1007 | 0 | 5205 | 3 | 3 |
+ 3 | 1007 | 0 | 5223 | 3 | 3 |
+ 3 | 1007 | 2011 | 5024 | 3 | 3 |
+ 3 | 1007 | 2011 | 5025 | 3 | 3 |
+ 3 | 1007 | 2011 | 5028 | 3 | 3 |
+ 3 | 1007 | 2011 | 5027 | 3 | 3 |
+ 3 | 1007 | 2011 | 5026 | 3 | 3 |
+ 3 | 1007 | 2011 | 5021 | 3 | 3 |
+ 3 | 1007 | 2011 | 5022 | 3 | 3 |
+ 3 | 1007 | 2011 | 5023 | 3 | 3 |
+ 3 | 1007 | 2011 | 5017 | 3 | 3 |
+ 3 | 1007 | 2011 | 5018 | 3 | 3 |
+ 3 | 1007 | 2011 | 5019 | 3 | 3 |
+ 3 | 1007 | 2011 | 5020 | 3 | 3 |
+ 3 | 1007 | 2000 | 5029 | 3 | 3 |
+ 3 | 1007 | 2000 | 5030 | 3 | 3 |
+ 3 | 1007 | 2000 | 5032 | 3 | 3 |
+ 3 | 1007 | 2000 | 5189 | 3 | 3 |
+ 3 | 1007 | 2000 | 5033 | 3 | 3 |
+ 3 | 1007 | 2000 | 5041 | 3 | 3 |
+ 3 | 1007 | 2000 | 5038 | 3 | 3 |
+ 3 | 1007 | 2000 | 5039 | 3 | 3 |
+ 3 | 1007 | 2000 | 5040 | 3 | 3 |
+ 3 | 1007 | 2000 | 5171 | 3 | 3 |
+ 3 | 1007 | 2000 | 5042 | 3 | 3 |
+ 3 | 1007 | 2000 | 5035 | 3 | 3 |
+ 3 | 1007 | 2000 | 5036 | 3 | 3 |
+ 3 | 1008 | 0 | 5186 | 3 | 3 |
+ 3 | 1008 | 0 | 5187 | 3 | 3 |
+ 3 | 1008 | 0 | 5213 | 3 | 3 |
+ 3 | 1008 | 2013 | 5131 | 3 | 5 |
+ 3 | 1008 | 2013 | 5147 | 3 | 3 |
+ 3 | 1008 | 2013 | 5130 | 3 | 3 |
+ 3 | 1008 | 2013 | 5137 | 3 | 3 |
+ 3 | 1008 | 2013 | 5136 | 3 | 3 |
+ 3 | 1008 | 2013 | 5135 | 3 | 3 |
+ 3 | 1008 | 2013 | 5134 | 3 | 3 |
+ 3 | 1008 | 2013 | 5133 | 3 | 3 |
+ 3 | 1008 | 2013 | 5132 | 3 | 3 |
+ 3 | 1008 | 2013 | 5138 | 3 | 5 |
+ 3 | 1008 | 2013 | 5139 | 3 | 5 |
+ 3 | 1008 | 2013 | 5140 | 3 | 3 |
+ 3 | 1008 | 2013 | 5179 | 3 | 3 |
+ 3 | 1008 | 2013 | 5214 | 3 | 3 |
+ 3 | 1009 | 2002 | 5043 | 3 | 3 |
+ 3 | 1009 | 2002 | 5045 | 3 | 3 |
+ 3 | 1009 | 2002 | 5047 | 3 | 3 |
+ 3 | 1009 | 2002 | 5071 | 3 | 3 |
+ 3 | 1009 | 2002 | 5054 | 3 | 3 |
+ 3 | 1009 | 2002 | 5056 | 3 | 3 |
+ 3 | 1009 | 2002 | 5058 | 3 | 3 |
+ 3 | 1009 | 2002 | 5060 | 3 | 3 |
+ 3 | 1009 | 2002 | 5197 | 3 | 3 |
+ 3 | 1009 | 2003 | 5044 | 3 | 3 |
+ 3 | 1009 | 2003 | 5046 | 3 | 3 |
+ 3 | 1009 | 2003 | 5048 | 3 | 3 |
+ 3 | 1009 | 2003 | 5072 | 3 | 3 |
+ 3 | 1009 | 2003 | 5055 | 3 | 3 |
+ 3 | 1009 | 2003 | 5057 | 3 | 3 |
+ 3 | 1009 | 2003 | 5059 | 3 | 3 |
+ 3 | 1009 | 2003 | 5061 | 3 | 3 |
+ 3 | 1009 | 2003 | 5198 | 3 | 3 |
+ 3 | 1009 | 2004 | 5082 | 3 | 3 |
+ 3 | 1009 | 2004 | 5081 | 3 | 3 |
+ 3 | 1009 | 2004 | 5083 | 3 | 3 |
+ 3 | 1009 | 2004 | 5062 | 3 | 3 |
+ 3 | 1009 | 2004 | 5064 | 3 | 3 |
+ 3 | 1009 | 2004 | 5063 | 3 | 3 |
+ 3 | 1009 | 2004 | 5065 | 3 | 3 |
+ 3 | 1009 | 2004 | 5069 | 3 | 3 |
+ 3 | 1009 | 2004 | 5066 | 3 | 3 |
+ 3 | 1009 | 2004 | 5067 | 3 | 3 |
+ 3 | 1009 | 2004 | 5068 | 3 | 3 |
+ 3 | 1009 | 2004 | 5079 | 3 | 3 |
+ 3 | 1009 | 2004 | 5080 | 3 | 3 |
+ 3 | 1009 | 2004 | 5192 | 3 | 3 |
+ 3 | 1009 | 2012 | 5049 | 3 | 3 |
+ 3 | 1009 | 2012 | 5051 | 3 | 3 |
+ 3 | 1009 | 2012 | 5052 | 3 | 3 |
+ 3 | 1009 | 2012 | 5053 | 3 | 3 |
+ 3 | 1009 | 0 | 5075 | 3 | 3 |
+ 3 | 1009 | 0 | 5070 | 3 | 3 |
+ 3 | 1009 | 0 | 5073 | 3 | 3 |
+ 3 | 1009 | 0 | 5074 | 3 | 3 |
+ 3 | 1009 | 0 | 5181 | 3 | 3 |
+ 3 | 1009 | 0 | 5184 | 3 | 3 |
+ 3 | 1006 | 0 | 5087 | 3 | 3 |
+ 3 | 1006 | 0 | 5088 | 3 | 3 |
+ 3 | 1006 | 0 | 5089 | 3 | 3 |
+ 3 | 1006 | 0 | 5092 | 3 | 3 |
+ 3 | 1006 | 0 | 5093 | 3 | 3 |
+ 3 | 1006 | 0 | 5091 | 3 | 3 |
+ 3 | 1006 | 0 | 5094 | 3 | 3 |
+ 3 | 1006 | 0 | 5180 | 3 | 3 |
+ 3 | 1006 | 0 | 5193 | 3 | 3 |
+ 3 | 1006 | 0 | 5209 | 3 | 3 |
+ 3 | 1006 | 0 | 5210 | 3 | 3 |
+ 3 | 1006 | 2001 | 5166 | 1 | 3 |
+ 3 | 1006 | 2001 | 5167 | 3 | 3 |
+ 3 | 1006 | 2001 | 5095 | 3 | 3 |
+ 3 | 1006 | 2001 | 5096 | 3 | 3 |
+ 3 | 1006 | 2001 | 5168 | 3 | 3 |
+ 3 | 1006 | 2001 | 5097 | 3 | 3 |
+ 3 | 1006 | 2001 | 5099 | 3 | 3 |
+ 3 | 1006 | 2001 | 5101 | 3 | 3 |
+ 3 | 1006 | 2001 | 5102 | 3 | 3 |
+ 3 | 1006 | 2001 | 5148 | 3 | 3 |
+ 3 | 1006 | 2001 | 5149 | 3 | 3 |
+ 3 | 1006 | 2001 | 5150 | 3 | 3 |
+ 3 | 1006 | 2001 | 5151 | 3 | 3 |
+ 3 | 1011 | 2010 | 5084 | 3 | 3 |
+ 3 | 1011 | 2010 | 5085 | 3 | 3 |
+ 3 | 1011 | 2010 | 5086 | 3 | 3 |
+ 3 | 1011 | 0 | 5174 | 3 | 3 |
+ 3 | 1011 | 0 | 5172 | 3 | 3 |
+ 3 | 1011 | 0 | 5173 | 3 | 3 |
+ 3 | 1011 | 0 | 5103 | 3 | 3 |
+ 3 | 1011 | 0 | 5104 | 3 | 3 |
+ 3 | 1011 | 0 | 5221 | 3 | 3 |
+ 3 | 1011 | 0 | 5220 | 3 | 3 |
+ 3 | 1011 | 0 | 5219 | 3 | 3 |
+ 3 | 1011 | 0 | 5178 | 3 | 3 |
+ 3 | 1011 | 0 | 5194 | 3 | 3 |
+ 3 | 1011 | 0 | 5212 | 3 | 3 |
+ 3 | 1011 | 0 | 5207 | 3 | 3 |
+ 3 | 1011 | 0 | 5208 | 3 | 3 |
+ 3 | 1011 | 0 | 5211 | 3 | 3 |
+ 4 | 0 | 0 | 5144 | 3 | 3 |
+ 4 | 0 | 0 | 5145 | 3 | 3 |
+ 4 | 0 | 0 | 5146 | 3 | 3 |
+ 4 | 0 | 0 | 5191 | 3 | 3 |
+ 4 | 0 | 0 | 5000 | 1 | 2 |
+ 4 | 0 | 0 | 5001 | 2 | 2 |
+ 4 | 0 | 0 | 5002 | 3 | 3 |
+ 4 | 0 | 0 | 5003 | 3 | 3 |
+ 4 | 0 | 0 | 5005 | 0 | 0 |
+ 4 | 0 | 0 | 5006 | 3 | 3 |
+ 4 | 0 | 0 | 5009 | 3 | 5 |
+
+
+main_menu_text| 4 |
+ 1 |Szerviz|Service|Szerviz|
+ 2 |Diagnosztika|Diagnostics|Diagnosztika|
+ 3 |Beállítások|Settings|Beállítások|
+ 4 |Rendszer|System|Rendszer|
+
+
+level1menu_text| 16 |
+ 0 |Általános|General|General|
+ 1000 |Teszt üzem|Test run|Teszt üzem|
+ 1001 |Tiltás...|Disable...|Tiltás...|
+ 1002 |TÜV vizsgálat|TÜV Test|TÜV vizsgálat|
+ 1003 |Statisztika|Statistics|Statisztika|
+ 1004 |Modulok|Modules|Modulok|
+ 1005 |Lift alapadatok|Lift base data|Lift alapadatok|
+ 1006 |Hívás beállítások|Call settings|Hívás beállítások|
+ 1007 |Hajtás|Drive|Hajtás|
+ 1008 |Pozíció érzékelés|Position detection|Pozíció érzékelés|
+ 1009 |Ajtó beállítások|Door settings|Ajtó beállítások|
+ 1010 |Biztonsági felvonó|Safety elevator|Biztonsági felvonó|
+ 1011 |Perifériák|Peripherals|Perifériák|
+ 1012 |Vezérlőpanel IO|Control panel IO|Vezérlőpanel IO|
+ 1013 |Fülkei elosztó IO|Cabin distr. IO|Fülkei elosztó IO|
+ 1014 |Modul IO|Module IO|Modul IO|
+
+
+level2menu_text| 15 |
+ 0 |Általános|General|General|
+ 2000 |Védelmek|Protections|Védelmek|
+ 2001 |Csoportvezérlés|Group control|Csoportvezérlés|
+ 2002 |A ajtó|Door A|A ajtó|
+ 2003 |B ajtó|Door B|B ajtó|
+ 2004 |Ajtó idők|Door timers|Ajtó idők|
+ 2005 |Füstérzékelő|Smoke sensor|Füstérzékelő|
+ 2006 |COP kijelző|COP display|COP kijelző|
+ 2007 |LOP kijelző|LOP display|LOP kijelző|
+ 2008 |Hangbemondó|Voice announcer|Hangbemondó|
+ 2009 |Terhelés érzékelő|Load sensor|Terhelés érzékelő|
+ 2010 |Szellőző ventillátor|Cabin vent|Szellőző ventillátor|
+ 2011 |Időzítések|Timers|Időzítések|
+ 2012 |Zárnyitó mágnes|Ret. Cam|Zárnyitó mágnes|
+ 2013 |Távolságok|Distances|Távolságok|
+
+
+parameters_menu_text| 224 |
+ 5000 |Mentés|Save|Mentés| 1 |0|0|0|0| 14 | 2 | 1 |0|0|||| 23 |
+ 5001 |Nyelv|Language|Nyelv| 0 |0| 0 | 2 |0| 15 | 2 | 2 | 1 | 0 |||| 5 |
+ 5002 |Dátum|Date|Dátum| 1 |0|0|0|0| 13 |0|0|0|0|||| 1 |
+ 5003 |Idő|Time|Idő| 1 |0|0|0|0| 13 |0|0|0|0|||| 2 |
+ 5004 |Hozzáférési szint|Access level|Hozzáférési szint| 1 |0| 1 | 3 |0| 15 | 2 | 2 | 4 | 1 |||| 4 |
+ 5005 |Engedélyező kód|Authorization code|Engedélyező kód| 0 |0| 100000 | 199999 |0| 14 | 0 | 0 |0| 195732 |||| 4 |
+ 5006 |Engedélyezett kapcs.|Auth. travels|Engedélyezett kapcs.| 0 |0| 0 | 4000000 |0|0|0|0|0| 0 |||| 33 |
+ 5007 |Eltelt kapcsolás|Eltelt kapcsolás|Eltelt kapcsolás| 1 |0| 0 | 4000000 |0|0| 0 | 0 |0|0|||| 34 |
+ 5008 |Összes kapcsolás|Összes kapcsolás|Összes kapcsolás| 1 |0| 0 | 200000000 |0|0| 5 |0|0|0|||| 35 |
+ 5009 |SW verzió|SW version|SW verzió| 1 |0|0|0|0|0| 5 |0|0|0|||| 6 |
+ 5010 |Küldés adott szintre|Send to floor|Küldés adott szintre| 1 |0| 1 | 60 |0| 14 |0|0|0| 1 |||| 138 |
+ 5011 |Teszt mód|Test mode|Teszt mód| 1 |0| 0 | 3 |0| 15 |0|0| 8 | 0 |||| 36 |
+ 5012 |Időtartam|Test interval|Időtartam| 0 |0| 0 | 600 |0| 3 |0|0|0| 0 |||| 37 |
+ 5013 |Menetszám|No. of runs|Menetszám| 0 |0| 0 | 600 |0|0|0|0|0| 0 |||| 38 |
+ 5014 |Szintek száma|No. of floors|Szintek száma| 0 |0| 2 | 30 |0|0|0|0|0| 2 |||| 21 |
+ 5015 |Ajtók száma|No. of doors|Ajtók száma| 0 |0| 1 | 2 |0|0|0|0|0| 1 |||| 22 |
+ 5016 |Hajtás típusa|Drive type|Hajtás típusa| 0 |0| 0 | 9 |0| 15 | 2 | 1 | 12 | 0 |||| 31 |
+ 5017 |T Cs-Delta átváltás|T S-D shift|T Cs-Delta átváltás| 0 |0| 0 | 2000 |0| 1 |0|0|0| 500 |||| 39 |
+ 5018 |T Cs-D LE irányban|S-D in DOWN dir.|T Cs-D LE irányban| 0 |0| 0 | 2000 |0| 1 |0|0|0| 500 |||| 40 |
+ 5019 |Sziv. utánfutás LE|T Pump overrun down|Sziv. utánfutás LE| 0 |0| 0 | 1000 |0| 1 |0|0|0| 0 |||| 41 |
+ 5020 |Sziv. utánfutás FEL|T Pump overrun up|Sziv. utánfutás FEL| 0 |0| 0 | 1000 |0| 1 |0|0|0| 10 |||| 42 |
+ 5021 |D Sziv. bekapcsolás|D Pump on|D Sziv. bekapcsolás| 0 |0| 0 | 3000 |0| 1 |0|0|0| 10 |||| 43 |
+ 5022 |D Szelep|D Valve|D Szelep| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 44 |
+ 5023 |D Szelep FEL ki|D UP valve off|D Szelep FEL ki| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 45 |
+ 5024 |D Kontaktor|D Contactor|D Kontaktor| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 46 |
+ 5025 |D Engedélyező jel|D Enable signal|D Engedélyező jel| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 48 |
+ 5026 |Gyors-lassú átfedés|T Speed overlap|Gyors-lassú átfedés| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 49 |
+ 5027 |D Sebesség p.|D Speed Comm.|D Sebesség p.| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 51 |
+ 5028 |D Irány p.|D Dir. Comm.|D Irány p.| 0 |0| 0 | 3000 |0| 1 |0|0|0| 0 |||| 53 |
+ 5029 |Tmx menetidő|T Run|Tmx menetidő| 0 |0| 5 | 200 |0| 2 |0|0|0| 70 |||| 9 |
+ 5030 |Tmx menetidő v1|Tmx Run slow spped|Tmx menetidő v1| 0 |0| 5 | 700 |0| 2 |0|0|0| 150 |||| 32 |
+ 5031 |Szintkorrekció|Level correction|Szintkorrekció| 0 |0| 10 | 20 |0| 5 |0|0|0| 20 |||| 8 |
+ 5032 |Tmx szintkorrekció|Tmax level corr.|Tmx szintkorrekció| 0 |0| 3 | 20 |0| 2 |0|0|0| 5 |||| 55 |
+ 5033 |N Korrekció|N correction|N Korrekció| 0 |0| 1 | 10 |0|0|0|0|0| 3 |||| 56 |
+ 5034 |Szintkorr. szivattyú|Aux. pump|Szintkorr. szivattyú| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 139 |
+ 5035 |Motor/Olajhűtés|Motor/Olajhűtés|Motor/Olajhűtés| 0 |0| 0 | 2 |0| 15 |0|0| 61 | 0 |||| 135 |
+ 5036 |T Motor/olajhűtés|T Motor fan|T Motor/olajhűtés| 0 |0| 1 | 300 |0| 2 |0|0|0| 10 |||| 57 |
+ 5037 |T Olajfűtés|T Oil heater|T Olajfűtés| 0 |0| 0 | 300 |0| 2 |0|0|0| 0 |||| 58 |
+ 5038 |T Kontaktor ell.|Contactor check|T Kontaktor ell.| 0 |0| 10 | 3000 |0| 1 |0|0|0| 1000 |||| 59 |
+ 5039 |T Fék1 nyitás ell.|BrakeM1 check|T Fék1 nyitás ell.| 0 |0| 0 | 3000 |0| 1 |0|0|0| 2000 |||| 60 |
+ 5040 |T Fék2 nyitás ell.|BrakeM2 check|T Fék2 nyitás ell.| 0 |0| 0 | 3000 |0| 1 |0|0|0| 2000 |||| 61 |
+ 5041 |Fázishiba érzékelés|Phase error|Fázishiba érzékelés| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 62 |
+ 5042 |Motorvédelem|Motor protection|Motorvédelem| 0 |0| 0 | 1 |0| 15 |0|0| 22 | 0 |||| 63 |
+ 5043 |A Aknaajtó típusa|A Landing door|A Aknaajtó típusa| 0 |0| 0 | 2 |0| 15 |0|0| 24 | 2 |||| 64 |
+ 5044 |B Aknaajtó típusa|B Landing door|B Aknaajtó típusa| 0 |0| 0 | 2 |0| 15 |0|0| 24 | 2 |||| 65 |
+ 5045 |A Fülkeajtó típusa|A Cabin door|A Fülkeajtó típusa| 0 |0| 0 | 5 |0| 15 |0|0| 27 | 4 |||| 66 |
+ 5046 |B Fülkeajtó típusa|B Cabin door|B Fülkeajtó típusa| 0 |0| 0 | 5 |0| 15 |0|0| 27 | 4 |||| 67 |
+ 5047 |A Zárnyitó mágnes|A Retiring cam|A Zárnyitó mágnes| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 68 |
+ 5048 |B Zárnyitó mágnes|B Retiring cam|B Zárnyitó mágnes| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 69 |
+ 5049 |Csikó be induláskor|Ret. cam ON at start|Csikó be induláskor| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 70 |
+ 5050 |Csikó ki megálláskor|Ret. cam OFF at stop|Csikó ki megálláskor| 0 |0| 1 | 1 |0| 15 |0|0| 57 | 0 |||| 71 |
+ 5051 |T Csikó védelem|T Ret. cam protect.|T Csikó védelem| 0 |0| 0 | 300 |0| 2 |0|0|0| 100 |||| 72 |
+ 5052 |Csikó DZ ki|Ret. Cam OFF in DZ|Csikó DZ ki| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 73 |
+ 5053 |Csikó nDZ ki|Ret. Cam OFF in nDZ|Csikó nDZ ki| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 74 |
+ 5054 |A Fényfüggöny kont.|A Door LC contact|A Fényfüggöny kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 75 |
+ 5055 |B Fényfüggöny kont.|B Door LC contact|B Fényfüggöny kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 76 |
+ 5056 |A Szor.gátló kont.|A Door OD contact|A Szor.gátló kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 77 |
+ 5057 |B Szor.gátló kont.|B Door OD contact|B Szor.gátló kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 78 |
+ 5058 |A HAZ kont.|A Closed pos. cont.|A HAZ kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 79 |
+ 5059 |B HAZ kont.|B Closed pos. cont.|B HAZ kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 80 |
+ 5060 |A HAN kont.|A Opened pos. cont.|A HAN kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 81 |
+ 5061 |B HAN kont.|B Opened pos. cont.|B HAN kont.| 0 |0| 0 | 1 |0| 15 |0|0| 59 | 0 |||| 82 |
+ 5062 |T A Nyitás|T A Door opening|T A Nyitás| 0 |0| 1 | 60 |0| 2 |0|0|0| 15 |||| 83 |
+ 5063 |T B Nyitás|T B Door opening|T B Nyitás| 0 |0| 1 | 60 |0| 2 |0|0|0| 15 |||| 84 |
+ 5064 |T A Zárás|T A Door closing|T A Zárás| 0 |0| 1 | 60 |0| 2 |0|0|0| 15 |||| 85 |
+ 5065 |T B Zárás|T B Door closing|T B Zárás| 0 |0| 1 | 60 |0| 2 |0|0|0| 15 |||| 86 |
+ 5066 |T Nyitva tartás LOP|T Open for LOP|T Nyitva tartás LOP| 0 |0| 1 | 30 |0| 2 |0|0|0| 15 |||| 87 |
+ 5067 |T Nyitva tartás COP|T Open for COP|T Nyitva tartás COP| 0 |0| 1 | 30 |0| 2 |0|0|0| 15 |||| 88 |
+ 5068 |T Nyitva tartás VIP|T Open for VIP|T Nyitva tartás VIP| 0 |0| 1 | 30 |0| 2 |0|0|0| 15 |||| 89 |
+ 5069 |D Nyitás-zárás|D Open-Close|D Nyitás-zárás| 0 |0| 1 | 2000 |0| 1 |0|0|0| 500 |||| 90 |
+ 5070 |Azonnali ajtó zárás|Immediate closing|Azonnali ajtó zárás| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 91 |
+ 5071 |A ajtó foly. parancs|A Door moment|A ajtó foly. parancs| 0 |0| 0 | 5 |0| 15 |0|0| 76 | 1 |||| 92 |
+ 5072 |B ajtó foly. parancs|B Door moment|B ajtó foly. parancs| 0 |0| 0 | 5 |0| 15 |0|0| 76 | 1 |||| 93 |
+ 5073 |Ajtó szelektivitás|Door selectivity|Ajtó szelektivitás| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 94 |
+ 5074 |Zsilip funkció|Sluice function|Zsilip funkció| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 95 |
+ 5075 |Ajtó előnyitás|Pre-Door opening|Ajtó előnyitás| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 96 |
+ 5076 |Parkolás|Parking|Parkolás| 0 |0| 0 | 2 |0| 15 |0|0| 82 | 1 |||| 98 |
+ 5077 |Parkolási szint|Parking on floor|Parkolási szint| 0 |0| 1 | 30 |0|14|0|0|0| 1 |||| 99 |
+ 5078 |T Parkolás|T Parking|T Parkolás| 0 |0| 1 | 1800 |0| 2 |0|0|0| 60 |||| 100 |
+ 5079 |TO Fényfüggöny|TO A Door LC|TO Fényfüggöny| 0 |0| 60 | 300 |0| 2 |0|0|0| 60 |||| 101 |
+ 5080 |TO Szor.gátló|TO A Door OD|TO Szor.gátló| 0 |0| 1 | 120 |0| 2 |0|0|0| 30 |||| 102 |
+ 5081 |T Indulásra vár|T Waiting for doors|T Indulásra vár| 0 |0| 1 | 240 |0| 2 |0|0|0| 60 |||| 103 |
+ 5082 |T Bizt. körre vár|T Waiting for SC|T Bizt. körre vár| 0 |0| 100 | 4000 |0| 1 |0|0|0| 500 |||| 104 |
+ 5083 |Ind. Próbálkozások|Start attempts|Ind. Próbálkozások| 0 |0| 0 | 20 |0|0|0|0|0| 5 |||| 105 |
+ 5084 |F. szellőző vent.|F. szellőző vent.|F. szellőző vent.| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 106 |
+ 5085 |T F. szellőző vent.|T Cabin fan|T F. szellőző vent.| 0 |0| 1 | 300 |0| 2 |0|0|0| 120 |||| 108 |
+ 5086 |Üzemen kívül esetén|Üzemen kívül esetén|Üzemen kívül esetén| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 111 |
+ 5087 |Gyűjtés módja|Call collection|Gyűjtés módja| 0 |0| 0 | 3 |0| 15 |0|0| 66 | 2 |||| 114 |
+ 5088 |Max belső parancs|Max COP calls|Max belső parancs| 0 |0| 1 | 60 |0|0|0|0|0| 4 |||| 115 |
+ 5089 |Max külső hívás|Max LOP calls|Max külső hívás| 0 |0| 1 | 60 |0|0|0|0|0| 4 |||| 116 |
+ 5090 |Tűzoltó alapállomás|Evacuation level|Tűzoltó alapállomás| 0 |0| 1 | 60 |0| 14 |0|0|0| 1 |||| 25 |
+ 5091 |T Foglalt|T Occupied|T Foglalt| 0 |0| 1 | 30 |0| 2 |0|0|0| 5 |||| 117 |
+ 5092 |Hívásnyugta t. COP|Delete COP ack light|Hívásnyugta t. COP| 0 |0| 0 | 1 |0| 15 |0|0| 64 | 0 |||| 119 |
+ 5093 |Hívásnyugta t. LOP|Delete LOP ack light|Hívásnyugta t. LOP| 0 |0| 0 | 1 |0| 15 |0|0| 64 | 0 |||| 120 |
+ 5094 |FEL-LE hívás törlés|Delete calls|FEL-LE hívás törlés| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 121 |
+ 5095 |GC Szinteltolás|GC Szinteltolás|GC Szinteltolás| 0 |0| 0 | 5 |0|0|0|0|0| 0 |||| 26 |
+ 5096 |GC TO|GC TO Group|GC TO| 0 |0| 1 | 120 |0| 2 |0|0|0| 45 |||| 124 |
+ 5097 |GC Helyben hívás|GC Local call|GC Helyben hívás| 0 |0| 0 | 1 |0| 15 |0|0| 106 | 0 |||| 126 |
+ 5098 |GC Hívás újraosztás|GC Call redistr.|GC Hívás újraosztás| 0 |0| 1 | 10 |0|0|0|0|0| 1 |||| 127 |
+ 5099 |GC Csúcsüzem|GC Peak op.|GC Csúcsüzem| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 128 |
+ 5100 |GC Csúcsüzem kezdet|GC Peak op. start|GC Csúcsüzem kezdet| 1 |0|0|0|0|0|0|0|0|0|||| 129 |
+ 5101 |GC T Csúcsüzem |GC T Peak op.|GC T Csúcsüzem | 0 |0| 0 | 0 |0| 14 |0|0|0| 0 |||| 130 |
+ 5102 |GC Kitüntetett szint|Landing priority|GC Kitüntetett szint| 0 |0| 1 | 30 |0|14|0|0|0| 1 |||| 131 |
+ 5103 |Hangjelzés tűzoltó, túlterhelt esetén|Beep on fire, overl.|Hangjelzés tűzoltó, túlterhelt esetén| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 132 |
+ 5104 |Hangjelzés gombnyomáskor|Beep on button push|Hangjelzés gombnyomáskor| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 133 |
+ 5105 |Érkezés jelzés ajtónyitáskor|Gong on door open|Érkezés jelzés ajtónyitáskor| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 134 |
+ 5106 |TÜV Menetidő|TUV T Run|TÜV Menetidő| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 140 |
+ 5107 |TÜV Végkapcsoló|TUV Final lim. sw.|TÜV Végkapcsoló| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 141 |
+ 5108 |TÜV 125% Terhelés|TUV 125% loading|TÜV 125% Terhelés| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 142 |
+ 5109 |TÜV UCM|TUV UCM|TÜV UCM| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 143 |
+ 5110 |TÜV Fogókészülék|TUV Safety Gear|TÜV Fogókészülék| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 144 |
+ 5111 |TÜV Ütköző|TUV Puffer|TÜV Ütköző| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 145 |
+ 5112 |TÜV Fék|TUV Brake|TÜV Fék| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 146 |
+ 5113 |Üzemmód|Mode|Üzemmód| 0 |0|0|0|0| 14 | 3 |0| 85 |0|||| 147 |
+ 5114 |Ajtó|Disable doors|Ajtó| 0 |0| 0 | 3 |0| 15 |0|0| 90 | 0 |||| 148 |
+ 5115 |Fényfüggöny|Disable door LC|Fényfüggöny| 0 |0| 0 | 3 |0| 15 |0|0| 94 | 0 |||| 149 |
+ 5116 |Szorításgátló|Disable door OD|Szorításgátló| 0 |0| 0 | 3 |0| 15 |0|0| 98 | 0 |||| 150 |
+ 5117 |Hívás|Disable calls|Hívás| 0 |0| 0 | 3 |0| 15 |0|0| 102 | 0 |||| 122 |
+ 5118 |Hibatároló|Error log|Hibatároló| 1 |0|0|0|0| 0 | 3 | 0 |0|0|||| 20 |
+ 5119 |Eseménynapló|Event log|Eseménynapló| 1 |0|0|0|0| 0 | 3 |0|0|0|||| 151 |
+ 5120 |N Bizt. vonali hiba|SC faults|N Bizt. vonali hiba| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 152 |
+ 5121 |Stat. külső hívás|Stat. landing call|Stat. külső hívás| 1 |0|0| 200000000 |0| 14 | 3 | 1 |0|0|||| 153 |
+ 5122 |N2. külső hívás|2nd landing call|N2. külső hívás| 1 |0|0|0|0| 14 | 5 |0|0|0|||| 154 |
+ 5123 |N3. külső hívás|3rd landing call|N3. külső hívás| 1 |0|0|0|0| 14 | 5 |0|0|0|||| 155 |
+ 5124 |Stat. belső parancs|Stat. car call|Stat. belső parancs| 1 |0|0| 200000000 |0| 14 | 3 | 1 |0|0|||| 156 |
+ 5125 |N2. belső parancs|2nd car call|N2. belső parancs| 1 |0|0|0|0| 14 | 5 |0|0|0|||| 157 |
+ 5126 |N3. belső parancs|3rd car call|N3. belső parancs| 1 |0|0|0|0| 14 | 5 |0|0|0|||| 158 |
+ 5127 |Driver A|Driver A|Driver A| 1 |0|0|0|0| 14 | 3 | 1 |0|0|||| 11 |
+ 5128 |Driver B|Driver B|Driver B| 1 |0|0|0|0| 14 | 3 | 1 |0|0|||| 12 |
+ 5129 |Készenléti üzemmód|Stand-by op.|Készenléti üzemmód| 1 |0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 159 |
+ 5130 |L Zóna mágnes|L Zóna mágnes|L Zóna mágnes| 0 |0| 100 | 500 |0| 5 |0|0|0| 120 |||| 160 |
+ 5131 |Akna felbontás|Landing resolution|Akna felbontás| 0 |0| 1 | 10000 |0|0| 5 |0|0| 1 |||| 161 |
+ 5132 |L Fékút v4|L Fékút v4|L Fékút v4| 0 |0| 0 | 16000 |0| 5 |0|0|0| 2300 |||| 162 |
+ 5133 |L Fékút v3|L Fékút v3|L Fékút v3| 0 |0| 0 | 16000 |0| 5 |0|0|0| 1800 |||| 163 |
+ 5134 |L Fékút v2|L Fékút v2|L Fékút v2| 0 |0| 0 | 16000 |0| 5 |0|0|0| 1200 |||| 164 |
+ 5135 |L Fékút v1|L Fékút v1|L Fékút v1| 0 |0| 0 | 16000 |0| 5 |0|0|0| 300 |||| 165 |
+ 5136 |L Fékút v0|L Fékút v0|L Fékút v0| 0 |0| 0 | 16000 |0| 5 |0|0|0| 150 |||| 166 |
+ 5137 |L Fékút vn|L Fékút vn|L Fékút vn| 0 |0| 0 | 16000 |0| 5 |0|0|0| 10 |||| 167 |
+ 5138 |L PVF|L PVF|L PVF| 0 |0| 500 | 3500 |0| 5 | 5 |0|0| 1000 |||| 168 |
+ 5139 |L PVL|L PVL|L PVL| 0 |0| 500 | 3500 |0| 5 | 5 |0|0| 1000 |||| 169 |
+ 5140 |L Ajtó előnyitás|L Ajtó előnyitás|L Ajtó előnyitás| 0 |0| 1 | 300 |0| 5 |0|0|0| 100 |||| 136 |
+ 5141 |Kijelzőképek|Display pic|Kijelzőképek| 0 |0|0|0|0| 14 | 0 | 0 |0|0|||| 17 |
+ 5142 |Driver A keresés|Check Driver A|Driver A keresés| 1 |0| 300 | 2000 |0| 14 |0|0|0| 300 |||| 18 |
+ 5143 |Hívó BCD kij. képek|Landing BCD disp.pic|Hívó BCD kij. képek| 0 |0|0|0|0| 14 |0|0|0|0|||| 19 |
+ 5144 |Kimenet választás|Output selection|Kimenet választás| 0 |0|0|0|0| 14 |0|0|0|0|||| 10 |
+ 5145 |Bemenet választás|Input selection|Bemenet választás| 0 |0|0|0|0| 14 |0|0|0|0|||| 13 |
+ 5146 |Modul IO választás|Modul IO selection|Modul IO választás| 0 |0|0|0|0| 14 |0|0|0|0|||| 14 |
+ 5147 |Jeladó érték|Encoder value|Jeladó érték| 1 |0|0|0|0| 14 |0|0|0|0|||| 24 |
+ 5148 |Távolság súlyozása|Distance weight|Távolság súlyozása| 0 |0| 2 | 20 |0|0|0|0|0| 5 |||| 27 |
+ 5149 |Megállók súlyozása|Stops weight|Megállók súlyozása| 0 |0| 2 | 20 |0|0|0|0|0| 10 |||| 28 |
+ 5150 |Útbaesés súlyozása|On way weight|Útbaesés súlyozása| 0 |0| 2 | 20 |0|0|0|0|0| 10 |||| 29 |
+ 5151 |Elindulás súlyozása|Start weight|Elindulás súlyozása| 0 |0| 1 | 60 |0|0|0|0|0| 20 |||| 30 |
+ 5152 |Hűtés|Cooling|Hűtés| 0 |0|0|0|0|0|0|0|0|0|||| 170 |
+ 5153 |L A3 teszt|L A3 teszt|L A3 teszt| 0 |0| 0 | 2000 |0| 5 | 5 |0|0|0|||| 171 |
+ 5154 |N A ajtó zárás kís.|N A ajtó zárás kís.|N A ajtó zárás kís.| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 172 |
+ 5155 |N A ajtó zárás|N A ajtó zárás|N A ajtó zárás| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 173 |
+ 5156 |N A ajtó nyitás|N A ajtó nyitás|N A ajtó nyitás| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 174 |
+ 5157 |N B ajtó zárás kís.|N B ajtó zárás kís.|N B ajtó zárás kís.| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 175 |
+ 5158 |N B ajtó zárás|N B ajtó zárás|N B ajtó zárás| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 176 |
+ 5159 |N B ajtó nyitás|N B ajtó nyitás|N B ajtó nyitás| 1 |0|0| 200000000 |0|0| 5 |0|0|0|||| 177 |
+ 5160 |Visszahozó sebesség|Restore speed|Visszahozó sebesség| 0 |0| 0 | 1 |0| 15 |0|0| 108 | 0 |||| 137 |
+ 5161 |Tanulómenet|Level learning|Tanulómenet| 1 |0| 0 | 3 |0| 14 | 3 | 3 | 110 | 0 |||| 178 |
+ 5162 |Gyorsindítás (DCP4)|Fast Start (DCP4)|Gyorsindítás (DCP4)| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 179 |
+ 5163 |Vizsgálati sebesség|Inspection speed|Vizsgálati sebesség| 0 |0| 0 | 1 |0| 15 |0|0| 108 | 0 |||| 180 |
+ 5164 |Referencia szint|Referencia szint|Referencia szint| 0 |0| 1 | 30 |0|14|0|0|0| 1 |||| 181 |
+ 5165 |T Max. ajtózárás|T Max. ajtózárás|T Max. ajtózárás| 0 |0| 1 | 60 |0| 2 |0|0|0| 30 |||| 182 |
+ 5166 |GC Lift azonosító|GC Lift ID|GC Lift azonosító| 0 |0| 0 | 3 |0| 15 | 3 | 1 | 33 | 0 |||| 183 |
+ 5167 |GC legmagasabb|GC highest|GC legmagasabb| 0 |0| 2 | 30 |0|0|0|0|0| 2 |||| 184 |
+ 5168 |GC TO vissza|GC TO Group back|GC TO vissza| 0 |0| 1 | 120 |0| 2 |0|0|0| 45 |||| 185 |
+ 5169 |Teszt állapot|Teszt állapot|Teszt állapot| 1 |0|0|0|0| 14 | 5 | 3 |0|0|||| 186 |
+ 5170 |Bemenet tesztelés|Bemenet tesztelés|Bemenet tesztelés| 1 |0|0|0|0| 14 | 3 | 3 |0|0|||| 187 |
+ 5171 |T Fék2 zárás késl.|T Fék2 zárás késl.|T Fék2 zárás késl.| 0 |0| 1 | 500 |0| 1 |0|0|0| 1 |||| 188 |
+ 5172 |Gong jel hossza|Gong jel hossza|Gong jel hossza| 0 |0| 1 | 5000 |0| 1 |0|0|0| 1000 |||| 189 |
+ 5173 |Gong jelzés helye|Gong jelzés helye|Gong jelzés helye| 0 |0| 0 | 1 |0| 15 |0|0| 64 | 0 |||| 190 |
+ 5174 |T F. világítás |T Cabin light|T F. világítás | 0 |0| 1 | 300 |0| 2 |0|0|0| 120 |||| 191 |
+ 5175 |T Max. Ajtónyitás|T Max. Ajtónyitás|T Max. Ajtónyitás| 0 |0| 1 | 60 |0| 2 |0|0|0| 30 |||| 192 |
+ 5176 |Futási idő|Futási idő|Futási idő| 1 |0|0|0|0| 14 | 1 | 1 |0|0|||| 193 |
+ 5177 |Törlés|Törlés|Törlés| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 118 | 0 |||| 194 |
+ 5178 |Akkumulátor hiba|Battery error|Akkumulátor hiba| 0 |0| 0 | 1 |0| 15 |0|0| 120 | 0 |||| 195 |
+ 5179 |Jeladó kimaradás ideje|Jeladó kimaradás ideje|Jeladó kimaradás ideje| 0 |0| 1 | 30 |0| 2 |0|0|0| 10 |||| 196 |
+ 5180 |T Prioritás várakozás|T Prioritás várakozás|T Prioritás várakozás| 0 |0| 1 | 20 |0| 2 |0|0|0| 2 |||| 197 |
+ 5181 |Tout Zónán kívül nHAZ|Tout Zónán kívül nHAZ|Tout Zónán kívül nHAZ| 0 |0| 1 | 60 |0| 2 |0|0|0| 5 |||| 198 |
+ 5182 |Sűllyesztéki karb. kilépés|Sűllyesztéki karb. kilépés|Sűllyesztéki karb. kilépés| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 122 | 0 |||| 199 |
+ 5183 |Gyártási teszt|Gyártási teszt|Gyártási teszt| 1 |0| 0 | 100 |0| 14 | 5 | 5 |0| 0 |||| 200 |
+ 5184 |Ajtó oldal|Door side selection|Ajtó oldal| 0 |0|0|0|0| 14 | 3 | 3 |0|0|||| 201 |
+ 5185 |VVVF Hibák|VVVF Hibák|VVVF Hibák| 1 |0|0|0|0| 14 | 3 | 1 |0|0|||| 202 |
+ 5186 |Pozíció érzékelő típusa|Pozíció érzékelő típusa|Pozíció érzékelő típusa| 0 |0| 0 | 3 |0| 15 | 3 | 3 | 124 | 0 |||| 203 |
+ 5187 |Abs. Jeladó felbontása|Abs. Jeladó felbontása|Abs. Jeladó felbontása| 0 |0| 0 | 4 |0| 15 | 3 | 3 | 128 | 0 |||| 204 |
+ 5188 |T start|T start|T start| 0 |0| 2 | 120 |0| 2 |0|0|0| 2 |||| 205 |
+ 5189 |Max. korr sebesség|Max. korr sebesség|Max. korr sebesség| 0 |0| 0 | 1000 | 3 | 6 |0|0|0| 300 |||| 206 |
+ 5190 |Hidraulikus karbantartás sebesség|Hidraulikus karbantartás sebesség|Hidraulikus karbantartás sebesség| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 133 | 0 |||| 207 |
+ 5191 |CPD funkció választás|CPD function selection|CPD funkció választás| 0 |0|0|0|0| 14 | 3 | 3 |0|0|||| 208 |
+ 5192 |Nudging FCEL után|Nudging FCEL után|Nudging FCEL után| 0 |0| 20 | 300 |0| 2 |0|0|0| 30 |||| 209 |
+ 5193 |Újraindítás várakozás|Újraindítás várakozás|Újraindítás várakozás| 0 |0| 1 | 30 |0| 2 |0|0|0| 5 |||| 210 |
+ 5194 |CPD hangerő|CPD hangerő|CPD hangerő| 0 |0| 1 | 7 |0| 0 |0|0|0| 5 |||| 211 |
+ 5195 |Tűzoltó vezérlés|Tűzoltó vezérlés|Tűzoltó vezérlés| 0 |0| 0 | 1 |0| 15 |0|0| 55 | 1 |||| 212 |
+ 5196 |Ajtóhajtás betáp.|Ajtóhajtás betáp.|Ajtóhajtás betáp.| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 135 | 1 |||| 213 |
+ 5197 |Ajtóhajtás A kényszerített zárás|Ajtóhajtás A kényszerített zárás|Ajtóhajtás A kényszerített zárás| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 57 | 0 |||| 214 |
+ 5198 |Ajtóhajtás B kényszerített zárás|Ajtóhajtás B kényszerített zárás|Ajtóhajtás B kényszerített zárás| 0 |0| 0 | 1 |0| 15 | 3 | 3 | 57 | 0 |||| 215 |
+ 5199 |TÜV A3 fék|TUV A3 break|TÜV A3 fék| 1 |0| 0 | 1 |0| 14 |0|0| 55 | 0 |||| 216 |
+ 5200 |Hidr. hajtásengedély|Hidr. hajtásengedély|Hidr. hajtásengedély| 0 |0| 0 | 2 |0| 15 |0|0| 137 | 2 |||| 217 |
+ 5201 |Gyors sebesség|Gyors sebesség|Gyors sebesség| 0 |0| 50 | 2500 |0| 6 |0|0|0| 100 |||| 218 |
+ 5202 |Karbantartási sebesség|Karbantartási sebesség|Karbantartási sebesség| 0 |0| 10 | 1500 |0| 6 |0|0|0| 50 |||| 219 |
+ 5203 |Kúszó sebesség|Kúszó sebesség|Kúszó sebesség| 0 |0| 10 | 1000 |0| 6 |0|0|0| 30 |||| 220 |
+ 5204 |Szintkorrekciós sebesség|Szintkorrekciós sebesség|Szintkorrekciós sebesség| 0 |0| 5 | 500 |0| 6 |0|0|0| 20 |||| 221 |
+ 5205 |DCP V0->Vn|DCP V0->Vn|DCP V0->Vn| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 1 |V0-Vn átmenet támogatott?||| 222 |
+ 5206 |Motor control 49-es modulon|Motor control 49-es modulon|Motor control 49-es modulon| 0 |0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 223 |
+ 5207 |CanOpen terhelésérzékelő Node_ID|CanOpen load sensor Node_ID|CanOpen terhelésérzékelő Node_ID| 0 |0| 3 | 256 |0| 0 |0|0|0| 8 |Alap: 8||| 224 |
+ 5208 |GPRS SIM APN|GPRS SIM APN|GPRS SIM APN| 0 |0|0|0|0| 14 |0|0|0|0|online, net, stb.||| 225 |
+ 5209 |Hívás altatás|Timed call disable |Hívás altatás|0|0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 226 |
+ 5210 |Hívás altatás ideje|Call dis. interval|Hívás altatás ideje|0|0|0|0|0| 14 |0|0|0| 30 |||| 227 |
+ 5211 |Ajtózárás hangjelzés|Door close signal|Ajtózárás hangjelzés|0|0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 228 |
+ 5212 |CanOpen terhelésérzékelő|CanOpen load sensor|CanOpen load sensor|0|0| 0 | 1 |0| 15 |0|0| 57 | 0 |||| 229 |
+ 5213 |LIMAX33|LIMAX33|LIMAX33| 1 |0|0|0|0| 14 | 3 | 3 |0| 0 |||| 230 |
+ 5214 |LIMAX33 insp.limit stop distance|LIMAX33 insp.limit stop distance|LIMAX33 insp.limit stop distance| 1 |0| 50 | 2500 |0| 5 |3|3|0| 200 |||| 231 |
+ 5215 |LIMAX33 SR áthidalás rögzítés|LIMAX33 fix SR bridging|LIMAX33 fix SR bridging|0|0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 232 |
+ 5216 |Kiürítési sebesség|Kiürítési sebesség|Kiürítési sebesség| 0 |0| 10 | 300 |0| 6 |0|0|0| 200 |||| 233 |
+ 5217 |Csoportvezérlés teszt|Group test|Csoportvezérlés teszt| 0 |0|0|0|0| 14 |0|0|0|0|||| 234 |
+ 5218 |BCD eltolás|BCD eltolás|BCD eltolás| 0 |0| 0 | 12 |0|0|0|0|0| 1 |||| 235 |
+ 5219 |Érkezés jelzés hossza|Érkezés jelzés hossza|Érkezés jelzés hossza| 0 |0| 1 | 15 |0| 0 |0|0|0| 5 |0,1 ms időalap||| 236 |
+ 5220 |Érkezés jelzés helye|Érkezés jelzés helye|Érkezés jelzés helye| 0 |0| 0 | 2 |0| 15 |0|0| 140 | 0 |||| 237 |
+ 5221 |Hívógomb hangjelzés|Hívógomb hangjelzés|Hívógomb hangjelzés| 0 |0| 1 | 15 |0| 0 |0|0|0| 5 |0: ki, 0,1 ms időalap||| 238 |
+ 5222 |Sync motor tanítás|Sync motor tanítás|Sync motor tanítás|1|0| 0 | 1 |0| 15 |0|0| 55 | 0 |Fék kikapcsolása 1 visszahozó menetre||| 239 |
+ 5223 |CanOpen motorvezérlő reset|Canopen drive reset|Canopen drive reset|1|0| 0 | 1 |0| 15 |0|0| 55 | 0 |||| 240 |
+
+menu_changelist_text| 143 |
+ 0 | | | | 0 |1|
+ 1 |Magyar|Hungarian|Magyar| 0 |3|
+ 2 |Angol|English|Angol| 1 |3|
+ 3 |Más|Other|Más| 2 |3|
+ 4 |Korlátozott|Korlátozott|Korlátozott| 0 |4|
+ 5 |Alap|Alap|Alap| 1 |4|
+ 6 |Bővített|Bővített|Bővített| 2 |4|
+ 7 |Fejlesztő|Fejlesztő|Fejlesztő| 3 |4|
+ 8 |Ki|Ki|Ki| 0 |4|
+ 9 |Végállomások között|Végállomások között|Végállomások között| 1 |4|
+ 10 |Random|Random|Random| 2 |4|
+ 11 |Minden szinten|Minden szinten|Minden szinten| 3 |4|
+ 12 |RST|RST|RST| 0 |10|
+ 13 |RST DCP|RST DCP|RST DCP| 1 |10|
+ 14 |Schneider-Electric|Schneider-Electric|Schneider-Electric| 2 |10|
+ 15 |Yaskawa-Párhuzamos|Yaskawa-Párhuzamos|Yaskawa-Párhuzamos| 3 |10|
+ 16 |Yaskawa-DCP|Yaskawa-DCP|Yaskawa-DCP| 4 |10|
+ 17 |CanOpen|CanOpen|CanOpen| 5 |10|
+ 18 |Hidraulikus 3 szelep|Hidraulikus 3 szelep|Hidraulikus 3 szelep| 6 |7|
+ 19 |Hidraulikus 4 szelep|Hidraulikus 4 szelep|Hidraulikus 4 szelep| 7 |7|
+ 20 |GMV NGV|GMV NGV|GMV NGV| 8 |7|
+ 21 |Bucher iValve|Bucher iValve|Bucher iValve| 9 |7|
+ 22 |PTC után megy|PTC után megy|PTC után megy| 0 |2|
+ 23 |PTC után nem megy|PTC után nem megy|PTC után nem megy| 1 |2|
+ 24 |Kézi|Kézi|Kézi| 0 |3|
+ 25 |Félautomata|Félautomata|Félautomata| 1 |3|
+ 26 |Automata|Automata|Automata| 2 |3|
+ 27 |Kézi|Kézi|Kézi| 0 |6|
+ 28 |3f|3f|3f| 1 |6|
+ 29 |Siemens AT-40|Siemens AT-40|Siemens AT-40| 2 |6|
+ 30 |Selcom|Selcom|Selcom| 3 |6|
+ 31 |Sematic|Sematic|Sematic| 4 |6|
+ 32 |Fermator|Fermator|Fermator| 5 |6|
+ 33 |A|A|A| 0 |4|
+ 34 |B|B|B| 1 |4|
+ 35 |C|C|C| 2 |4|
+ 36 |D|D|D| 3 |4|
+ 37 |A ajtó|A ajtó|A ajtó| 0 |3|
+ 38 |B ajtó|B ajtó|B ajtó| 1 |3|
+ 39 |A és B ajtó|A és B ajtó|A és B ajtó| 2 |3|
+ 40 |A ajtó|A ajtó|A ajtó| 0 |3|
+ 41 |B ajtó|B ajtó|B ajtó| 1 |3|
+ 42 |A és B ajtó|A és B ajtó|A és B ajtó| 2 |3|
+ 43 |A ajtó|A ajtó|A ajtó| 0 |3|
+ 44 |B ajtó|B ajtó|B ajtó| 1 |3|
+ 45 |A és B ajtó|A és B ajtó|A és B ajtó| 2 |3|
+ 46 |Külső A oldal|Külső A oldal|Külső A oldal| 0 |9|
+ 47 |Külső B oldal|Külső B oldal|Külső B oldal| 1 |9|
+ 48 |Külső A és B oldal|Külső A és B oldal|Külső A és B oldal| 2 |9|
+ 49 |Belső A oldal|Belső A oldal|Belső A oldal| 3 |9|
+ 50 |Belső B oldal|Belső B oldal|Belső B oldal| 4 |9|
+ 51 |Belső A és B oldal|Belső A és B oldal|Belső A és B oldal| 5 |9|
+ 52 |A oldal|A oldal|A oldal| 6 |9|
+ 53 |B oldal|B oldal|B oldal| 7 |9|
+ 54 |A és B oldal|A és B oldal|A és B oldal| 8 |9|
+ 55 |Nem|Nem|Nem| 0 |2|
+ 56 |Igen|Igen|Igen| 1 |2|
+ 57 |Nincs|Not presented|Nincs| 0 |2|
+ 58 |Van|Presented|Van| 1 |2|
+ 59 |Normal Open|Normal Open|Normal Open| 0 |2|
+ 60 |Normal Close|Normal Close|Normal Close| 1 |2|
+ 61 |Nincs|Not presented|Nincs| 0 |3|
+ 62 |Induláskor|On startup|Induláskor| 1 |3|
+ 63 |PTC2 v. bemenet|PTC2 or input|PTC2 v. bemenet| 2 |3|
+ 64 |Ajtónyitás kezdete|Ajtónyitás kezdete|Ajtónyitás kezdete| 0 |2|
+ 65 |Lassítás|Lassítás|Lassítás| 1 |2|
+ 66 |Egyparancsos|Egyparancsos|Egyparancsos| 0 |4|
+ 67 |Egy gombos gyűjtő|Egy gombos gyűjtő|Egy gombos gyűjtő| 1 |4|
+ 68 |LE-FEL gyűjtő|LE-FEL gyűjtő|LE-FEL gyűjtő| 2 |4|
+ 69 |Csoportvezérlés|Csoportvezérlés|Csoportvezérlés| 3 |4|
+ 70 |Szintben|Szintben|Szintben| 0 |2|
+ 71 |Lassításkor|Lassításkor|Lassításkor| 1 |2|
+ 72 |Nincs|Nincs|Nincs| 0 |4|
+ 73 |Menet közben|Menet közben|Menet közben| 1 |4|
+ 74 |Gomb start|Gomb start|Gomb start| 2 |4|
+ 75 |Gomb start-stop|Gomb start-stop|Gomb start-stop| 3 |4|
+ 76 |Nincs|Nincs|Nincs| 0 |6|
+ 77 |Záráskor ha mozog|Záráskor ha mozog|Záráskor ha mozog| 1 |6|
+ 78 |Nyitáskor|Nyitáskor|Nyitáskor| 2 |6|
+ 79 |Záráskor|Záráskor|Záráskor| 3 |6|
+ 80 |Nyitáskor és Záráskor|Nyitáskor és Záráskor|Nyitáskor és Záráskor| 4 |6|
+ 81 |Nyitáskor és záráskor, ha mozog|Nyitáskor és záráskor, ha mozog|Nyitáskor és záráskor, ha mozog| 5 |6|
+ 82 |Helyben nyitott ajtóval|Helyben nyitott ajtóval|Helyben nyitott ajtóval| 0 |3|
+ 83 |Helyben zárt ajtóval|Helyben zárt ajtóval|Helyben zárt ajtóval| 1 |3|
+ 84 |Adott szinten zárt ajtóval|Adott szinten zárt ajtóval|Adott szinten zárt ajtóval| 2 |3|
+ 85 |Normál|Normál|Normál| 0 |5|
+ 86 |Karbantartás|Karbantartás|Karbantartás| 1 |5|
+ 87 |Visszaállító|Visszaállító|Visszaállító| 2 |5|
+ 88 |Vizsgálat|Vizsgálat|Vizsgálat| 3 |5|
+ 89 |Szerelési|Szerelési|Szerelési| 4 |5|
+ 90 |Ki|Ki|Ki| 0 |4|
+ 91 |A oldal|A oldal|A oldal| 1 |4|
+ 92 |B oldal|B oldal|B oldal| 2 |4|
+ 93 |A és B oldal|A és B oldal|A és B oldal| 3 |4|
+ 94 |Ki|Ki|Ki| 0 |4|
+ 95 |A oldal|A oldal|A oldal| 1 |4|
+ 96 |B oldal|B oldal|B oldal| 2 |4|
+ 97 |A és B oldal|A és B oldal|A és B oldal| 3 |4|
+ 98 |Ki|Ki|Ki| 0 |4|
+ 99 |A oldal|A oldal|A oldal| 1 |4|
+ 100 |B oldal|B oldal|B oldal| 2 |4|
+ 101 |A és B oldal|A és B oldal|A és B oldal| 3 |4|
+ 102 |Ki|Ki|Ki| 0 |4|
+ 103 |A oldal|A oldal|A oldal| 1 |4|
+ 104 |B oldal|B oldal|B oldal| 2 |4|
+ 105 |A és B oldal|A és B oldal|A és B oldal| 3 |4|
+ 106 |Mindegyik|Mindegyik|Mindegyik| 0 |2|
+ 107 |Ritkábban használt|Ritkábban használt|Ritkábban használt| 1 |2|
+ 108 |Karbantartás sebesség|Karbantartás sebesség|Karbantartás sebesség| 0 |2|
+ 109 |Lassú sebesség|Lassú sebesség|Lassú sebesség| 1 |2|
+ 110 |Felbontás tanulás|Felbontás tanulás|Felbontás tanulás| 0 |5|
+ 111 |Szinttanulás|Szinttanulás|Szinttanulás| 1 |5|
+ 112 |Szinttávolságok|Szinttávolságok|Szinttávolságok| 2 |5|
+ 113 |Szintbeállítás|Szintbeállítás|Szintbeállítás| 3 |5|
+ 114 |Referencia tanulás|Referencia tanulás|Referencia tanulás| 4 |5|
+ 115 |Teszt 1|Test 1|Teszt 1| 0 |3|
+ 116 |Teszt 2|Test 2|Teszt 2| 1 |3|
+ 117 |Teszt 3|Test 3|Teszt 3| 2 |3|
+ 118 |Tanult szintek törlése|Tanult szintek törlése|Tanult szintek törlése| 0 |2|
+ 119 |Teljes EEPROM törlése|Teljes EEPROM törlése|Teljes EEPROM törlése| 1 |2|
+ 120 |Hiba után megy|Hiba után megy|Hiba után megy| 0 |2|
+ 121 |Hiba után nem megy|Hiba után nem megy|Hiba után nem megy| 1 |2|
+ 122 |Alsó szint fel hívás|Alsó szint fel hívás|Alsó szint fel hívás| 0 |2|
+ 123 |Nyugtázó kapcsoló|Nyugtázó kapcsoló|Nyugtázó kapcsoló| 1 |2|
+ 124 |Inkrementális|Inkrementális|Inkrementális| 0 |4|
+ 125 |Limax CanOpen417|Limax CanOpen417|Limax CanOpen417| 1 |4|
+ 126 |Limax33 CanOpen417|Limax33 CanOpen417|Limax33 CanOpen417| 2 |4|
+ 127 |Limax1M CanOpen417|Limax1M CanOpen417|Limax1M CanOpen417| 3 |4|
+ 128 |1 mm|1 mm|1 mm| 0 |5|
+ 129 |0.5 mm|0.5 mm|0.5 mm| 1 |5|
+ 130 |0.25 mm|0.25 mm|0.25 mm| 2 |5|
+ 131 |0.125 mm|0.125 mm|0.125 mm| 3 |5|
+ 132 |0.0625 mm|0.0625 mm|0.0625 mm| 4 |5|
+ 133 |Lassú sebesség|Lassú sebesség|Lassú sebesség| 0 |2|
+ 134 |Gyors sebesség|Gyors sebesség|Gyors sebesség| 1 |2|
+ 135 |Folyamatos|Folyamatos|Folyamatos| 0 |2|
+ 136 |Kapcsolt|Kapcsolt|Kapcsolt| 1 |2|
+ 137 |Csak FEL|Csak FEL|Csak FEL| 0 |3|
+ 138 |Csak LE|Csak LE|Csak LE| 1 |3|
+ 139 |Mindkét irányban|Mindkét irányban|Mindkét irányban| 2 |3|
+ 140 |Ki|Ki|Ki| 0 |3|
+ 141 |Ajtónyitás kezdete|Ajtónyitás kezdete|Ajtónyitás kezdete| 1 |3|
+ 142 |Lassítás|Lassítás|Lassítás| 2 |3|
+
+
+menu_message_text| 55 |
+ 0 | | | |
+ 1 |OK|OK|OK|
+ 2 |Hiba|Error|Hiba|
+ 3 |Elfogadva|Accepted|Elfogadva|
+ 4 |Új kód:|New code:|Új kód:|
+ 5 |Kód:|Code:|Kód:|
+ 6 |A kód lejárt|Code expired|A kód lejárt|
+ 7 |Pozíció|Position|Pozíció|
+ 8 |Hívások|Calls|Hívások|
+ 9 |Ajtó állapot|Door state|Ajtó állapot|
+ 10 |EEPROM hiba|EEPROM error|EEPROM hiba|
+ 11 |Mentés sikeres|Save OK|Mentés sikeres|
+ 12 |Olvasás sikeres|Read Ok|Olvasás sikeres|
+ 13 |Nem konfigurált kimenet|Not configured Output|Nem konfigurált kimenet|
+ 14 |Tör.|Clr.|Tör.|
+ 15 |Relé:|Relay:|Relé:|
+ 16 |NPN:|NPN:|NPN:|
+ 17 |NPN sz.k.:|NPN cable:|NPN sz.k.:|
+ 18 |CB ki.:|CB out:|CB ki.:|
+ 19 |PNP:|PNP:|PNP:|
+ 20 |Bemenet N:|Input N:|Bemenet N:|
+ 21 |Bemenet P:|Input P:|Bemenet P:|
+ 22 |Mind|All|Mind|
+ 23 |Nem konfigurált bemenet|Not configured Input|Nem konfigurált bemenet|
+ 24 |Talált:|Found:|Talált:|
+ 25 |Indít?|Start?|Indít?|
+ 26 |Törölve|Deleted|Törölve|
+ 27 |Nincs hiba|No error|Nincs hiba|
+ 28 |Nem indítható|Can't start|Nem indítható|
+ 29 |Küld:|Send:|Küld:|
+ 30 |Funk. kapcs. együtt|Func sw at once|Funk. kapcs. együtt|
+ 31 |HK áthidalva|HK áthidalva|HK áthidalva|
+ 32 |HB áthidalva|HB áthidalva|HB áthidalva|
+ 33 |HA áthidalva|HA áthidalva|HA áthidalva|
+ 34 |HB + HA áthidalva|HB + HA áthidalva|HB + HA áthidalva|
+ 35 |Túl sok áthidalás|Túl sok áthidalás|Túl sok áthidalás|
+ 36 |Vizsgálat üzem|Vizsgálat üzem|Vizsgálat üzem|
+ 37 |Visszahozó üzem|Visszahozó üzem|Visszahozó üzem|
+ 38 |Karbantartás üzem|Karbantartás üzem|Karbantartás üzem|
+ 39 |TÜV teszt|TÜV teszt|TÜV teszt|
+ 40 |Szerelési üzemmód|Szerelési üzemmód|Szerelési üzemmód|
+ 41 |Mozgatás kész?|Mozgatás kész?|Mozgatás kész?|
+ 42 |Elmozdulás|Elmozdulás|Elmozdulás|
+ 43 |Szintkeresés|Szintkeresés|Szintkeresés|
+ 44 |Reset szükséges|Reset szükséges|Reset szükséges|
+ 45 |Kioldas (E)|Kioldas (E)|Kioldas (E)|
+ 46 |Hiba a tesztben|Hiba a tesztben|Hiba a tesztben|
+ 47 |Csak álló helyzetben|Csak álló helyzetben|Csak álló helyzetben|
+ 48 |STOP aktív visszahozó|STOP aktív visszahozó|STOP aktív visszahozó|
+ 49 |STOP aktív süllyeszték|STOP aktív süllyeszték|STOP aktív süllyeszték|
+ 50 |STOP aktív fülke|STOP aktív fülke|STOP aktív fülke|
+ 51 |Fülkeajtó nyitva!!!|Fülkeajtó nyitva!!!|Fülkeajtó nyitva!!!|
+ 52 |BR reset szükséges|BR reset szükséges|BR reset szükséges|
+ 53 |Ideiglenes leállás|Ideiglenes leállás|Ideiglenes leállás|
+ 54 |CanOpen init|CanOpen init|CanOpen init|
+
+
+error_message_text| 138 |
+ 0 | | | | 2 |
+ 1 |EEPROM hiba|EEPROM error|EEPROM hiba| 2 |
+ 2 |Nem konfigurált kimenet|Not configured Output|Nem konfigurált kimenet| 2 |
+ 3 |Nem konfigurált bemenet|Not configured Input|Nem konfigurált bemenet| 2 |
+ 4 |Co processzor hiba|Co processor error|Co processzor hiba| 2 |
+ 5 |A3 hiba Fék1|A3 error Fék1|A3 hiba Fék1| 2 |
+ 6 |A3 hiba Fék2|A3 error Fék2|A3 hiba Fék2| 2 |
+ 7 |A ajtó hiba|A door error|A ajtó hiba| 0 |
+ 8 |B ajtó hiba|B door error|B ajtó hiba| 0 |
+ 9 |A ajtó z. kívül nyitva|A ajtó z. kívül nyitva|A ajtó z. kívül nyitva| 0 |
+ 10 |B ajtó z. kívül nyitva|B ajtó z. kívül nyitva|B ajtó z. kívül nyitva| 0 |
+ 11 |Túlmelegedés 1|Overheated 1|Túlmelegedés 1| 0 |
+ 12 |Engedélyezett kapcs.|Auth. travels|Engedélyezett kapcs.| 2 |
+ 13 |PVL PVF együtt|PVL PVF együtt|PVL PVF együtt| 2 |
+ 14 |Pozíció érzékelés: jeladó hiba|Pozíció érzékelés: jeladó hiba|Pozíció érzékelés: jeladó hiba| 2 |
+ 15 |Menetidő hiba|T Run error|Menetidő hiba| 2 |
+ 16 |DCP hiba|DCP error|DCP hiba| 0 |
+ 17 |B1-megszakadt|B1-interrupted|B1-megszakadt| 0 |
+ 18 |B2-megszakadt|B2-interrupted|B2-megszakadt| 0 |
+ 19 |B3-megszakadt|B3-interrupted|B3-megszakadt| 0 |
+ 20 |Túlterhelt|Overloaded|Túlterhelt| 0 |
+ 21 |PMA hiba|PMA error|PMA hiba| 2 |
+ 22 |UCM hiba, elmozdulás|UCM error, movement|UCM hiba, elmozdulás| 2 |
+ 23 |ZS jel nem jön|ZS jel nem jön|ZS jel nem jön| 0 |
+ 24 |ZB jel nem jön|ZB jel nem jön|ZB jel nem jön| 0 |
+ 25 |ZB jel megmarad|ZB jel megmarad|ZB jel megmarad| 0 |
+ 26 |ZS jel megmarad|ZS jel megmarad|ZS jel megmarad| 0 |
+ 27 |B. kör menet közben megszakadt|Sec. line interrupted during travel|B. kör menet közben megszakadt| 0 |
+ 28 |Paraméter limiten kívül|Paraméter limiten kívül|Paraméter limiten kívül| 2 |
+ 29 |Fázishiba|Fázishiba|Fázishiba| 3 |
+ 30 |Kontaktorok nem húznak|Kontaktorok nem húznak|Kontaktorok nem húznak| 3 |
+ 31 |Kontaktorok beragadtak|Kontaktorok beragadtak|Kontaktorok beragadtak| 3 |
+ 32 |iValve B: nincs 24V-on|iValve B: nincs 24V-on|iValve B: nincs 24V-on| 2 |
+ 33 |Túl sok áthidalás|Túl sok áthidalás|Túl sok áthidalás| 2 |
+ 34 |Biztonsági kör hiba|Biztonsági kör hiba|Biztonsági kör hiba| 2 |
+ 35 |Programfutási hiba|Program interruption|Programfutási hiba| 2 |
+ 36 |RDY-RUN menet közben|RDY-RUN menet közben|RDY-RUN menet közben| 2 |
+ 37 |Normál log.-ban hiba|Normál log.-ban hiba|Normál log.-ban hiba| 2 |
+ 38 |Üzemmód hiba|Üzemmód hiba|Üzemmód hiba| 2 |
+ 39 |Gyűjtési mód hiba|Gyűjtési mód hiba|Gyűjtési mód hiba| 2 |
+ 40 |Akkumlátor hiba|Akkumlátor hiba|Akkumlátor hiba| 2 |
+ 41 |Akkumlátor töltés hiba|Akkumlátor töltés hiba|Akkumlátor töltés hiba| 2 |
+ 42 |Liftazonosító hiba|Liftazonosító hiba|Liftazonosító hiba| 2 |
+ 43 |Frekvenciaváltó hiba|VVVF error|Frekvenciaváltó hiba| 2 |
+ 44 |UCM ellenőrzőjel megszűnt|UCM ellenőrzőjel megszűnt|UCM ellenőrzőjel megszűnt| 2 |
+ 45 |UCM ellenőrzőjel nem jön|UCM ellenőrzőjel nem jön|UCM ellenőrzőjel nem jön| 0 |
+ 46 |F.váltó NOT_READY hiba|F.váltó NOT_READY hiba|F.váltó NOT_READY hiba| 0 |
+ 47 |F.váltó ALARM hiba|F.váltó ALARM hiba|F.váltó ALARM hiba| 0 |
+ 48 |F.váltó FAULT hiba|F.váltó FAULT hiba|F.váltó FAULT hiba| 0 |
+ 49 |F.váltó MISS_SIGNAL hiba|F.váltó MISS_SIGNAL hiba|F.váltó MISS_SIGNAL hiba| 0 |
+ 50 |CDP modul hiba|CDP modul hiba|CDP modul hiba| 0 |
+ 51 |Szintkorrekciós hiba B7|Szintkorrekciós hiba B7|Szintkorrekciós hiba B7| 2 |
+ 52 |Korrekciós hiba, B7 aktív|Korrekciós hiba, B7 aktív|Korrekciós hiba, B7 aktív| 2 |
+ 53 |B1-megszakadt karbantartás módban|B1-megszakadt karbantartás módban|B1-megszakadt karbantartás módban| 0 |
+ 54 |B1 állandóan aktív|B1 állandóan aktív|B1 állandóan aktív| 0 |
+ 55 |B2 állandóan aktív|B2 állandóan aktív|B2 állandóan aktív| 2 |
+ 56 |B3 állandóan aktív|B3 állandóan aktív|B3 állandóan aktív| 0 |
+ 57 |B4 nem jön meg|B4 nem jön meg|B4 nem jön meg| 0 |
+ 58 |B4-megszakadt|B4-interrupted|B4-megszakadt| 0 |
+ 59 |B5 állandóan aktív|B5 állandóan aktív|B5 állandóan aktív| 1 |
+ 60 |B5 nem jön meg|B5 nem jön meg|B5 nem jön meg| 0 |
+ 61 |B5-megszakadt|B5-interrupted|B5-megszakadt| 0 |
+ 62 |B6 állandóan aktív|B6 állandóan aktív|B6 állandóan aktív| 1 |
+ 63 |B6 nem jön meg|B6 nem jön meg|B6 nem jön meg| 0 |
+ 64 |B6-megszakadt|B6-interrupted|B6-megszakadt| 0 |
+ 65 |Áthidalás|Áthidalás|Áthidalás| 1 |
+ 66 |Túlmelegedés 2|Overheated 2|Túlmelegedés 2| 0 |
+ 67 |Gépház hőmérséklet túl alacsony|Gépház hőmérséklet túl alacsony|Gépház hőmérséklet túl alacsony| 0 |
+ 68 |Gépház hőmérséklet túl magas|Gépház hőmérséklet túl magas|Gépház hőmérséklet túl magas| 0 |
+ 69 |Inverter hiba|Inverter hiba|Inverter hiba| 0 |
+ 70 |Felső végállás|Felső végállás|Felső végállás| 3 |
+ 71 |Alsó végállás|Alsó végállás|Alsó végállás| 3 |
+ 72 |PMF és PML egyszerre aktív|PMF és PML egyszerre aktív|PMF és PML egyszerre aktív| 0 |
+ 73 |PMF aktív|PMF aktív|PMF aktív| 0 |
+ 74 |PML aktív|PML aktív|PML aktív| 0 |
+ 75 |Fülkei PKF és PKL egyszerre aktív|Fülkei PKF és PKL egyszerre aktív|Fülkei PKF és PKL egyszerre aktív| 0 |
+ 76 |Fülkei PKF aktív|Fülkei PKF aktív|Fülkei PKF aktív| 0 |
+ 77 |Fülkei PKL aktív|Fülkei PKL aktív|Fülkei PKL aktív| 0 |
+ 78 |Aknai PKF és PKL egyszerre aktív|Aknai PKF és PKL egyszerre aktív|Aknai PKF és PKL egyszerre aktív| 0 |
+ 79 |Aknai PKF aktív|Aknai PKF aktív|Aknai PKF aktív| 0 |
+ 80 |Aknai PKL aktív|Aknai PKL aktív|Aknai PKL aktív| 0 |
+ 81 |Szoftveres felső végállás|Szoftveres felső végállás|Szoftveres felső végállás| 2 |
+ 82 |(A) oldali ajtó HAN/HAZ|(A) oldali ajtó HAN/HAZ|(A) oldali ajtó HAN/HAZ| 0 |
+ 83 |(B) oldali ajtó HAN/HAZ|(B) oldali ajtó HAN/HAZ|(B) oldali ajtó HAN/HAZ| 0 |
+ 84 |HAN1 nincs|HAN1 nincs|HAN1 nincs| 0 |
+ 85 |HAZ1 nincs|HAZ1 nincs|HAZ1 nincs| 0 |
+ 86 |HAN2 nincs|HAN2 nincs|HAN2 nincs| 0 |
+ 87 |HAZ2 nincs|HAZ2 nincs|HAZ2 nincs| 0 |
+ 88 |Táphiba|Táphiba|Táphiba| 0 |
+ 89 |iValve A: nincs 0V-on|iValve A: nincs 0V-on|iValve A: nincs 0V-on| 2 |
+ 90 |Fék 1 nem zár|Fék 1 nem zár|Fék 1 nem zár| 2 |
+ 91 |Fék 2 nem zár|Fék 2 nem zár|Fék 2 nem zár| 2 |
+ 92 |Fék 1 nem nyit|Fék 1 nem nyit|Fék 1 nem nyit| 2 |
+ 93 |Fék 2 nem nyit|Fék 2 nem nyit|Fék 2 nem nyit| 2 |
+ 94 |ABS encoder hiba|ABS encoder hiba|ABS encoder hiba| 2 |
+ 95 |ABS mágnes hiba|ABS mágnes hiba|ABS mágnes hiba| 2 |
+ 96 |Túlnyomás|Túlnyomás|Túlnyomás| 0 |
+ 97 |Nullnyomás|Nullnyomás|Nullnyomás| 2 |
+ 98 |PVF rosszkor jön|PVF rosszkor jön|PVF rosszkor jön| 0 |
+ 99 |PVL rosszkor jön|PVL rosszkor jön|PVL rosszkor jön| 0 |
+ 100 |PVF állandóan megvan|PVF állandóan megvan|PVF állandóan megvan| 0 |
+ 101 |PVL állandóan megvan|PVL állandóan megvan|PVL állandóan megvan| 0 |
+ 102 |PVF nincs karbantartás üzemben|PVF nincs karbantartás üzemben|PVF nincs karbantartás üzemben| 0 |
+ 103 |PVL nincs karbantartás üzemben|PVL nincs karbantartás üzemben|PVL nincs karbantartás üzemben| 0 |
+ 104 |PMA1 hiba|PMA1 hiba|PMA1 hiba| 0 |
+ 105 |PMA1 beragadt|PMA1 beragadt|PMA1 beragadt| 1 |
+ 106 |PMA2 hiba|PMA2 hiba|PMA2 hiba| 0 |
+ 107 |PMA2 beragadt|PMA2 beragadt|PMA2 beragadt| 1 |
+ 108 |Korrekció hiba, sebességtúllépés|Korrekció hiba, sebességtúllépés|Korrekció hiba, sebességtúllépés| 2 |
+ 109 |Fülkevilágítás hiba|Fülkevilágítás hiba|Fülkevilágítás hiba| 0 |
+ 110 |Fülkevilágítás kikapcsolt|Fülkevilágítás kikapcsolt|Fülkevilágítás kikapcsolt| 0 |
+ 111 |Driver 1 hiba|Driver 1 hiba|Driver 1 hiba| 0 |
+ 112 |Driver 2 hiba|Driver 2 hiba|Driver 2 hiba| 0 |
+ 113 |RDY-RUN álló helyzetben, hiányzó RDY|RDY-RUN álló helyzetben, hiányzó RDY|RDY-RUN álló helyzetben, hiányzó RDY| 2 |
+ 114 |RDY-RUN menet közben, hiányzó RUN|RDY-RUN menet közben, hiányzó RUN|RDY-RUN menet közben, hiányzó RUN| 2 |
+ 115 |NGV A3 hiba: RDY-RUN álló helyzetben|NGV A3 hiba: RDY-RUN álló helyzetben|NGV A3 hiba: RDY-RUN álló helyzetben| 2 |
+ 116 |Szelep teszt<24 óra|Szelep teszt<24 óra|Szelep teszt<24 óra| 2 |
+ 117 |UCM teszt A3|UCM teszt A3|UCM teszt A3| 2 |
+ 118 |UCM teszt LE|UCM teszt LE|UCM teszt LE| 2 |
+ 119 |Fényfüggöny hiba (A) oldal|Fényfüggöny hiba (A) oldal|Fényfüggöny hiba (A) oldal| 0 |
+ 120 |Fényfüggöny hiba (B) oldal|Fényfüggöny hiba (B) oldal|Fényfüggöny hiba (B) oldal| 0 |
+ 121 |Végkapcsoló hiba|Végkapcsoló hiba|Végkapcsoló hiba| 0 |
+ 122 |Fogókészülék aktív|Fogókészülék aktív|Fogókészülék aktív| 0 |
+ 123 |B2-megszakadt|B2-interrupted|B2-megszakadt| 2 |
+ 124 |B3-megszakadt|B3-interrupted|B3-megszakadt| 2 |
+ 125 |Fék 1 nem zár|Fék 1 nem zár|Fék 1 nem zár| 0 |
+ 126 |Fék 2 nem zár|Fék 2 nem zár|Fék 2 nem zár| 0 |
+ 127 |Fék 1 nem nyit|Fék 1 nem nyit|Fék 1 nem nyit| 0 |
+ 128 |Fék 2 nem nyit|Fék 2 nem nyit|Fék 2 nem nyit| 0 |
+ 129 |Kontaktor ellenőrzés 1|Kontaktor ellenőrzés 1|Kontaktor ellenőrzés 1| 2 |
+ 130 |Kontaktor ellenőrzés 2|Kontaktor ellenőrzés 2|Kontaktor ellenőrzés 2| 2 |
+ 131 |STOP áthidalva|STOP áthidalva|STOP áthidalva| 2 |
+ 132 |Ajtóhajtás hiba A|Ajtóhajtás hiba A|Ajtóhajtás hiba A| 0 |
+ 133 |Ajtóhajtás hiba B|Ajtóhajtás hiba B|Ajtóhajtás hiba B| 0 |
+ 134 |UCM ellenőrzőjel beragadt|UCM ellenőrzőjel beragadt|UCM ellenőrzőjel beragadt| 2 |
+ 135 |CanOpen frekvenciaváltó hiba|CanOpen frekvenciaváltó hiba|CanOpen frekvenciaváltó hiba| 0 |
+ 136 |CanOpen súlyszenzor hiba|CanOpen súlyszenzor hiba|CanOpen súlyszenzor hiba| 0 |
+ 137 |BMR/BMT menet közben megszakadt|BMR/BMT menet közben megszakadt|BMR/BMT menet közben megszakadt| 0 |
+ 138 |Canopen Fülkei kijelző hiba|Canopen Fülkei kijelző hiba|Canopen Fülkei kijelző hiba| 0 |
+
+
+event_message_text| 9 |
+ 0 | | | |
+ 1 |Engedélyezett kapcs.|Auth. travels|Engedélyezett kapcs.|
+ 2 |A ajtó z. kívül nyitva|A ajtó z. kívül nyitva|A ajtó z. kívül nyitva|
+ 3 |B ajtó z. kívül nyitva|B ajtó z. kívül nyitva|B ajtó z. kívül nyitva|
+ 4 |Jeladó felbontás|Jeladó felbontás|Jeladó felbontás|
+ 5 |A ajtó visszazárás|A ajtó visszazárás|A ajtó visszazárás|
+ 6 |B ajtó visszazárás|B ajtó visszazárás|B ajtó visszazárás|
+ 7 |Áramszünet|Áramszünet|Áramszünet|
+ 8 |Driver 2 kapcsolat megszakadt|Driver 2 kapcsolat megszakadt|Driver 2 kapcsolat megszakadt|
+
+
+IO_functions_Output_text| 72 |
+ 0 |Üres|Void|Üres|
+ 1 |Gyors sebesség|Gyors sebesség|Gyors sebesség|
+ 2 |Közbülső sebesség|Közbülső sebesség|Közbülső sebesség|
+ 3 |Karbantartás sebesség|Karbantartás sebesség|Karbantartás sebesség|
+ 4 |Lassú sebesség|Lassú sebesség|Lassú sebesség|
+ 5 |Szintbeállási sebesség|Szintbeállási sebesség|Szintbeállási sebesség|
+ 6 |Hajtás engedélyező jel|Hajtás engedélyező jel|Hajtás engedélyező jel|
+ 7 |Segédszivattyú vezérlése|Segédszivattyú vezérlése|Segédszivattyú vezérlése|
+ 8 |Motorhűtés vezérlése|Motorhűtés vezérlése|Motorhűtés vezérlése|
+ 9 |Olajhűtés vezérlése|Olajhűtés vezérlése|Olajhűtés vezérlése|
+ 10 |A oldali zárnyitó mágnes|A oldali zárnyitó mágnes|A oldali zárnyitó mágnes|
+ 11 |B oldali zárnyitó mágnes|B oldali zárnyitó mágnes|B oldali zárnyitó mágnes|
+ 12 |A oldali 3f ajtó nyit vezérlő kimenete|A oldali 3f ajtó nyit vezérlő kimenete|A oldali 3f ajtó nyit vezérlő kimenete|
+ 13 |A oldali 3f ajtó zár vezérlő kimenete|A oldali 3f ajtó zár vezérlő kimenete|A oldali 3f ajtó zár vezérlő kimenete|
+ 14 |B oldali 3f ajtó nyit vezérlő kimenete|B oldali 3f ajtó nyit vezérlő kimenete|B oldali 3f ajtó nyit vezérlő kimenete|
+ 15 |B oldali 3f ajtó zár vezérlő kimenete|B oldali 3f ajtó zár vezérlő kimenete|B oldali 3f ajtó zár vezérlő kimenete|
+ 16 |Fék kontaktor 1|Fék kontaktor 1|Fék kontaktor 1|
+ 17 |Fék kontaktor 2|Fék kontaktor 2|Fék kontaktor 2|
+ 18 |Motor kontaktor 1|Motor kontaktor 1|Motor kontaktor 1|
+ 19 |Motor kontaktor 2|Motor kontaktor 2|Motor kontaktor 2|
+ 20 |Sebességhatároló befogatás|Sebességhatároló befogatás|Sebességhatároló befogatás|
+ 21 |Sebességhatároló visszaállítás|Sebességhatároló visszaállítás|Sebességhatároló visszaállítás|
+ 22 |STO1|STO1|STO1|
+ 23 |STO2|STO2|STO2|
+ 24 |GS|GS|GS|
+ 25 |Fel irány|Fel irány|Fel irány|
+ 26 |Le irány|Le irány|Le irány|
+ 27 |Nudging|Nudging|Nudging|
+ 28 |UCM le|UCM le|UCM le|
+ 29 |Motor csillag|Motor csillag|Motor csillag|
+ 30 |Motor delta|Motor delta|Motor delta|
+ 31 |Gyors sebesség le|Gyors sebesség le|Gyors sebesség le|
+ 32 |Lassú sebesség le|Lassú sebesség le|Lassú sebesség le|
+ 33 |Bucher binary B1|Bucher binary B1|Bucher binary B1|
+ 34 |Bucher binary B2|Bucher binary B2|Bucher binary B2|
+ 35 |Bucher binary B3|Bucher binary B3|Bucher binary B3|
+ 36 |Bucher binary B4|Bucher binary B4|Bucher binary B4|
+ 37 |Bucher binary B7|Bucher binary B7|Bucher binary B7|
+ 38 |Gyors sebesség fel|Gyors sebesség fel|Gyors sebesség fel|
+ 39 |Lassú sebesség fel|Lassú sebesség fel|Lassú sebesség fel|
+ 40 |Multi step Ref1|Multi step Ref1|Multi step Ref1|
+ 41 |Multi step Ref2|Multi step Ref2|Multi step Ref2|
+ 42 |Multi step Ref3|Multi step Ref3|Multi step Ref3|
+ 43 |UCM működtetés|UCM működtetés|UCM működtetés|
+ 44 |Aknavilágítás|Aknavilágítás|Aknavilágítás|
+ 45 |Vészcsengő|Vészcsengő|Vészcsengő|
+ 46 |Vészmentés sebességtúllépés|Vészmentés sebességtúllépés|Vészmentés sebességtúllépés|
+ 47 |Hibajel|Hibajel|Hibajel|
+ 48 |Hangjelzés|Hangjelzés|Hangjelzés|
+ 49 |Ajtóhajtás betáp.|Ajtóhajtás betáp.|Ajtóhajtás betáp.|
+ 50 |Tűzeset|Tűzeset|Tűzeset|
+ 51 |Szerviz|Szerviz|Szerviz|
+ 52 |7 szegmens A|7 szegmens A|7 szegmens A|
+ 53 |7 szegmens B|7 szegmens B|7 szegmens B|
+ 54 |7 szegmens C|7 szegmens C|7 szegmens C|
+ 55 |7 szegmens D|7 szegmens D|7 szegmens D|
+ 56 |7 szegmens E|7 szegmens E|7 szegmens E|
+ 57 |7 szegmens F|7 szegmens F|7 szegmens F|
+ 58 |7 szegmens G|7 szegmens G|7 szegmens G|
+ 59 |Reset engedélyezés|Reset engedélyezés|Reset engedélyezés|
+ 60 |Piros lámpa|Piros lámpa|Piros lámpa|
+ 61 |Zöld lámpa|Zöld lámpa|Zöld lámpa|
+ 62 |Szimulált PMA|Szimulált PMA|Szimulált PMA|
+ 63 |Retesz érintkező 1|Retesz érintkező 1|Retesz érintkező 1|
+ 64 |Retesz érintkező 2|Retesz érintkező 2|Retesz érintkező 2|
+ 65 |Retesz érintkező 3|Retesz érintkező 3|Retesz érintkező 3|
+ 66 |Retesz érintkező 4|Retesz érintkező 4|Retesz érintkező 4|
+ 67 |Retesz érintkező 5|Retesz érintkező 5|Retesz érintkező 5|
+ 68 |Retesz érintkező 6|Retesz érintkező 6|Retesz érintkező 6|
+ 69 |Retesz érintkező 7|Retesz érintkező 7|Retesz érintkező 7|
+ 70 |Retesz érintkező 8|Retesz érintkező 8|Retesz érintkező 8|
+ 71 |Pontos szint|Pontos szint|Pontos szint|
+ 
+
+IO_functions_Input_text| 56 |
+ 0 |Üres|Void|Üres|
+ 1 |Minimális nyomás|Minimális nyomás|Minimális nyomás|
+ 2 |Túlnyomás|Túlnyomás|Túlnyomás|
+ 3 |A3 szelep ellenőrzés|A3 szelep ellenőrzés|A3 szelep ellenőrzés|
+ 4 |Kontaktor ellenőrzés|Kontaktor ellenőrzés|Kontaktor ellenőrzés|
+ 5 |Fék 1 ellenőrzés|Fék 1 ellenőrzés|Fék 1 ellenőrzés|
+ 6 |Fék 2 ellenőrzés|Fék 2 ellenőrzés|Fék 2 ellenőrzés|
+ 7 |Hajtás ellenőrzés|Hajtás ellenőrzés|Hajtás ellenőrzés|
+ 8 |Tűzeset jelzés|Fire alarm|Tűzeset jelzés|
+ 9 |Hőmérséklet limit 1|Hőmérséklet limit 1|Hőmérséklet limit 1|
+ 10 |Hőmérséklet limit 2|Hőmérséklet limit 2|Hőmérséklet limit 2|
+ 11 |Fék 3 ellenőrzés|Fék 3 ellenőrzés|Fék 3 ellenőrzés|
+ 12 |Olaj hőmérséklet magas|Olaj hőmérséklet magas|Olaj hőmérséklet magas|
+ 13 |Olaj hőmérséklet alacsony|Olaj hőmérséklet alacsony|Olaj hőmérséklet alacsony|
+ 14 |Vészmentés|Vészmentés|Vészmentés|
+ 15 |Tűzoltó kapcsoló|Tűzoltó kapcsoló|Tűzoltó kapcsoló|
+ 16 |Visszahozó vezérlés|Visszahozó vezérlés|Visszahozó vezérlés|
+ 17 |FEL irány|FEL irány|FEL irány|
+ 18 |LE irány|LE irány|LE irány|
+ 19 |Vizsgálat vezérlés|Vizsgálat vezérlés|Vizsgálat vezérlés|
+ 20 |Túlterhelt|Túlterhelt|Túlterhelt|
+ 21 |Megtelt|Megtelt|Megtelt|
+ 22 |Fázis ellenőrzés|Fázis ellenőrzés|Fázis ellenőrzés|
+ 23 |Akkumlátor hiba|Akkumlátor hiba|Akkumlátor hiba|
+ 24 |Akkumlátor töltés hiba|Akkumlátor töltés hiba|Akkumlátor töltés hiba|
+ 25 |Biztonságikör áthidalás: aknaajtó|Biztonságikör áthidalás: aknaajtó|Biztonságikör áthidalás: aknaajtó|
+ 26 |Biztonságikör áthidalás: fülkeajtó|Biztonságikör áthidalás: fülkeajtó|Biztonságikör áthidalás: fülkeajtó|
+ 27 |Biztonságikör áthidalás: retesz|Biztonságikör áthidalás: retesz|Biztonságikör áthidalás: retesz|
+ 28 |RST ZB|RST ZB|RST ZB|
+ 29 |RST ZS|RST ZS|RST ZS|
+ 30 |Nyitottajtós mozgási sebesség alatt|Nyitottajtós mozgási sebesség alatt|Nyitottajtós mozgási sebesség alatt|
+ 31 |Készenléti üzemmód|Készenléti üzemmód|Készenléti üzemmód|
+ 32 |Sebességhatároló visszaállítás|Sebességhatároló visszaállítás|Sebességhatároló visszaállítás|
+ 33 |Bucher SMA|Bucher SMA|Bucher SMA|
+ 34 |GMV-NGV RDY|GMV-NGV RDY|GMV-NGV RDY|
+ 35 |GMV-NGV RUN|GMV-NGV RUN|GMV-NGV RUN|
+ 36 |UCM engedélyezés|UCM engedélyezés|UCM engedélyezés|
+ 37 |Áramszünet jelzés|Áramszünet jelzés|Áramszünet jelzés|
+ 38 |Aknavilágítás|Aknavilágítás|Aknavilágítás|
+ 39 |Vészcsengő|Vészcsengő|Vészcsengő|
+ 40 |Stop gomb|Stop gomb|Stop gomb|
+ 41 |Biztonságikör áthidalás közös|Biztonságikör áthidalás közös|Biztonságikör áthidalás közös|
+ 42 |Gépház hőmérséklet alacsony|Gépház hőmérséklet alacsony|Gépház hőmérséklet alacsony|
+ 43 |Gépház hőmérséklet magas|Gépház hőmérséklet magas|Gépház hőmérséklet magas|
+ 44 |Inverter hiba|Inverter hiba|Inverter hiba|
+ 45 |Végkapcsoló|Végkapcsoló|Végkapcsoló|
+ 46 |Táphiba|Táphiba|Táphiba|
+ 47 |Fülkevilágítás L4check|Fülkevilágítás L4check|Fülkevilágítás L4check|
+ 48 |Fülkevilágítás kikapcsolt|Fülkevilágítás kikapcsolt|Fülkevilágítás kikapcsolt|
+ 49 |Kontaktor ellenorzés 2|Kontaktor ellenorzés 2|Kontaktor ellenorzés 2|
+ 50 |BMT figyelés|BMT figyelés|BMT figyelés|
+ 51 |BMR figyelés|BMR figyelés|BMR figyelés|
+ 52 |Pontos szint gomb|Pontos szint gomb|Pontos szint gomb|
+ 53 |Vn karbantartasban|Vn karbantartasban|Vn karbantartasban|
+ 54 |LIMAX33 reset|LIMAX33 reset|LIMAX33 reset|
+ 55 |Kiürítési irány|Evacuation direction|Evacuation direction|
+  
+
+
+IO_functions_Modul_text| 28 |
+ 0 |Üres|Void|Üres|
+ 1 |Hívás le|Hívás le|Hívás le|
+ 2 |Hívás jelzés le|Hívás jelzés le|Hívás jelzés le|
+ 3 |Hívás nyugta le|Hívás nyugta le|Hívás nyugta le|
+ 4 |Hívás fel|Hívás fel|Hívás fel|
+ 5 |Hívás jelzés fel|Hívás jelzés fel|Hívás jelzés fel|
+ 6 |Hívás nyugta fel|Hívás nyugta fel|Hívás nyugta fel|
+ 7 |Érkezés jelzés|Érkezés jelzés|Érkezés jelzés|
+ 8 |Foglalt jelzés|Foglalt jelzés|Foglalt jelzés|
+ 9 |Tűzeset jelzés|Tűzeset jelzés|Tűzeset jelzés|
+ 10 |Tűzeseti kapcsoló|Tűzeseti kapcsoló|Tűzeseti kapcsoló|
+ 11 |Kijelző A|Kijelző A|Kijelző A|
+ 12 |Kijelző B|Kijelző B|Kijelző B|
+ 13 |Kijelző C|Kijelző C|Kijelző C|
+ 14 |Kijelző D|Kijelző D|Kijelző D|
+ 15 |Prioritás 1|Prioritás 1|Prioritás 1|
+ 16 |Prioritás 2|Prioritás 2|Prioritás 2|
+ 17 |Prioritás 3|Prioritás 3|Prioritás 3|
+ 18 |Készenléti üzemmód|Készenléti üzemmód|Készenléti üzemmód|
+ 19 |Hívások tiltása|Hívások tiltása|Hívások tiltása|
+ 20 |Gong érkezés jelzés|Gong érkezés jelzés|Gong érkezés jelzés|
+ 21 |Karb. Tűz hangjelzés|Karb. Tűz hangjelzés|Karb. Tűz hangjelzés|
+ 22 |Le irány jelzés|Le irány jelzés|Le irány jelzés|
+ 23 |Fel irány jelzés|Fel irány jelzés|Fel irány jelzés|
+ 24 |Hívás garázs|Hívás garázs|Hívás garázs|
+ 25 |Hívás nyugta garázs|Hívás nyugta garázs|Hívás nyugta garázs|
+ 26 |Érkezés jelzés le|Érkezés jelzés le|Érkezés jelzés le|
+ 27 |Érkezés jelzés fel|Érkezés jelzés fel|Érkezés jelzés fel|
+
+
+CDP_functions_Modul_text| 20 |
+ 0 |Üres|Void|Üres|
+ 1 |Reset|Reset|Reset|
+ 2 |Ajtóhajtás hiba (A) oldal|Ajtóhajtás hiba (A) oldal|Ajtóhajtás hiba (A) oldal|
+ 3 |Ajtóhajtás hiba (B) oldal|Ajtóhajtás hiba (B) oldal|Ajtóhajtás hiba (B) oldal|
+ 4 |Végkapcsoló|Végkapcsoló|Végkapcsoló|
+ 5 |Érkezésjelző|Érkezésjelző|Érkezésjelző|
+ 6 |Fogókészülék|Fogókészülék|Fogókészülék|
+ 7 |Hibajel|Hibajel|Hibajel|
+ 8 |Ajtóhajtás betáp.|Ajtóhajtás betáp.|Ajtóhajtás betáp.|
+ 9 |Fényfüggöny státusz A|Fényfüggöny státusz A|Fényfüggöny státusz A|
+ 10 |Fényfüggöny státusz B|Fényfüggöny státusz B|Fényfüggöny státusz B|
+ 11 |Karbantartás véghelyzet fent|Karbantartás véghelyzet fent|Karbantartás véghelyzet fent|
+ 12 |Karbantartás véghelyzet lent|Karbantartás véghelyzet lent|Karbantartás véghelyzet lent|
+ 13 |Pontos szint gomb|Pontos szint gomb|Pontos szint gomb|
+ 14 |Vn karbantartásban|Vn karbantartásban|Vn karbantartásban|
+ 15 |PKL 2|PKL 2|PKL 2|
+ 16 |PKF 2|PKF 2|PKF 2|
+ 17 |EN81|EN81|EN81|
+ 18 |Karbantartás ajtó nyitás|Karbantartás ajtó nyitás|Karbantartás ajtó nyitás|
+ 19 |Karbantartás ajtó zárás|Karbantartás ajtó zárás|Karbantartás ajtó zárás|
+
+

@@ -1,0 +1,28 @@
+﻿@page
+@model SendToFloorModel
+@{
+}
+
+
+<body>
+    <div class="content">
+        <div class="navbar">
+            <h1>Küldés adott emeletre</h1>
+        </div>
+
+        <div class="text-center">
+            <div class="mt-4">
+                <form method="post" class="d-flex align-items-center gap-2">
+                    <label for="sendtofloor" class="me-2">Enter a number (1-30):</label>
+                    <input type="number" id="sendtofloor" name="sendtofloor" min="1" max="30" class="form-control w-auto" required>
+                    <button type="submit" class="btn btn-info" name="action" value="button_sendtofloor">Küldés</button>
+                </form>
+            </div><br><br>
+
+            <p><br></p>
+            <p class="footer-text">Learn about us: <a href="http://lifon.hu">&nbsp;link</a>.</p>
+        </div>
+    </div>
+</body>
+
+

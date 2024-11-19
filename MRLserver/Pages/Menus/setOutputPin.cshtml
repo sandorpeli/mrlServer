@@ -1,0 +1,87 @@
+﻿@page
+@model MRLserver.Pages.Menus.setOutputPinModel
+@{
+}
+
+<head>
+    <style>
+        .list-container {
+            display: grid;
+            gap: 10px; /* Add space between items */
+            margin: 20px 0;
+        }
+
+        .list-item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .list-item.header {
+                background-color: #0F77e6;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+        .column {
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        /* Increase checkbox size */
+        input[type="checkbox"] {
+            transform: scale(1.5); /* Alternative to resizing */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>Rendszer menü</h1>
+    </div>
+    <br />
+    <br />
+
+    <div class="list-container">
+        <div class="list-item header">
+            <div class="column header-column">Kimenet</div>
+            <div class="column header-column">Funkció</div>
+            <div class="column header-column">Invertálás</div>
+        </div>
+
+        @for (int i = 0; i < Model.OutputName.Count; i++)
+        {
+            <div class="list-item">
+                @* <div class="column">@Model._csvTextData.OutputFunctionList.Items[i].ID </div> *@
+
+                <div class="column">@Model.OutputName[i] </div>
+
+                <div class="column">
+                    <select name="outputFunction" id="outputFunction">
+                        @for (int j = 0; j < Model._csvTextData.OutputFunctionList.Items.Count; j++)
+                        {
+                            <option value="@Model._csvTextData.OutputFunctionList.Items[j].Function">
+                                @Model._csvTextData.OutputFunctionList.Items[j].Function
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="function_@i" />
+                </div>
+            </div>
+        }
+
+
+
+    </div>
+
+</body>

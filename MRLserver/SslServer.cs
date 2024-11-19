@@ -112,6 +112,8 @@ public class SslServer
                     {
                         string fullText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
+                        Console.WriteLine("fullText received: " + fullText);
+
                         if (fullText.Contains("HTTP"))
                         {
                             break;
@@ -207,7 +209,7 @@ public class SslServer
                                 Console.WriteLine("Lift ID not found.");
                             }
                         }
-                        else if (fullText.Contains("RsponseEnd"))
+                        else if (fullText.Contains("ResponseEnd"))
                         {
                             // Regular expression to match the value after "_Lift ID: "
                             string pattern = @"_Lift ID:\s(0x[0-9A-Fa-f]+)";
@@ -222,6 +224,27 @@ public class SslServer
                                 //_sharedData.SetData(liftIdWithoutPrefix, "myID", liftIdWithoutPrefix);  // Különböző típusú adatokat is beállíthatunk
                                 int resp = int.Parse(Regex.Match(fullText, @"_Response:(\d+)").Groups[1].Value);
                                 Console.WriteLine("Response received: " + liftIdWithoutPrefix + ", ", +resp);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Lift ID not found.");
+                            }
+                        }
+                        else if (fullText.Contains("--- AllData ---"))
+                        {
+                            // Regular expression to match the value after "_Lift ID: "
+                            string pattern = @"_Lift ID:\s(0x[0-9A-Fa-f]+)";
+
+                            Match match = Regex.Match(fullText, pattern);
+
+                            if (match.Success)
+                            {
+                                string liftIdHex = match.Groups[1].Value; // Hex string (including 0x prefix)
+                                string liftIdWithoutPrefix = liftIdHex.Substring(2); // Remove "0x" prefix
+
+                                //_sharedData.SetData(liftIdWithoutPrefix, "myID", liftIdWithoutPrefix);  // Különböző típusú adatokat is beállíthatunk
+                                //int resp = int.Parse(Regex.Match(fullText, @"_Response:(\d+)").Groups[1].Value);
+                                Console.WriteLine("Response received: " + fullText);
 
 
                                 /*
@@ -372,7 +395,6 @@ public class SslServer
 
         while (true)
         {
-            // Sleep for 10 seconds or your desired period
             await Task.Delay(10000);  // Send a message every 10 seconds
             byte[] messageToSend = Encoding.UTF8.GetBytes("_Com:AuthTravel," + cnt + "&");
 
@@ -382,14 +404,27 @@ public class SslServer
             {
                 messageToSend = Encoding.UTF8.GetBytes("_Com:SendToFloor," + (int)data + "&");
                 _sharedData.DeleteSubKey("313437303139510B00330027", "sendToFloor");
+                // Send the message asynchronously
+                await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
+                Console.WriteLine("Sent periodic message: " + System.Text.Encoding.UTF8.GetString(messageToSend));
             } else
             {
                 cnt++;
+                await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
+                Console.WriteLine("Sent periodic message: " + System.Text.Encoding.UTF8.GetString(messageToSend));
             }
 
-            // Send the message asynchronously
-            await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
-            Console.WriteLine("Sent periodic message: " + messageToSend.ToString());
+            data = _sharedData.GetData("313437303139510B00330027", "GetAllData");
+            if (data is not null and > (object)0)
+            {
+                messageToSend = Encoding.UTF8.GetBytes("_Com:GetAllData," + (int)data + "&");
+                _sharedData.DeleteSubKey("313437303139510B00330027", "GetAllData");
+                // Send the message asynchronously
+                await sslStream.WriteAsync(messageToSend, 0, messageToSend.Length);
+                Console.WriteLine("Sent periodic message: " + System.Text.Encoding.UTF8.GetString(messageToSend));
+            }
+
+
         }
     }
 
