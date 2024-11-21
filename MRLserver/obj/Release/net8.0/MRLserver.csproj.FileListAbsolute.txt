@@ -261,3 +261,4 @@ D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Release\net8.0\refint\MRLserver.dll
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Release\net8.0\MRLserver.pdb
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Release\net8.0\MRLserver.genruntimeconfig.cache
 D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Release\net8.0\ref\MRLserver.dll
+D:\Work\Lifon\MRL\MRL server\MRLserver\obj\Release\net8.0\MRLserver.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a040cc063210672f5ec29cb4fda35e03af57e6e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b4a0a5f59869a667ce0d346338043e09de105fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRLserver")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

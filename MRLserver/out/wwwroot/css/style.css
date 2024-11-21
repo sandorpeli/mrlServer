@@ -1,0 +1,78 @@
+﻿/* Sidebar Styling */
+/* Add this to your CSS file (e.g., site.css or style.css) */
+.sidebar {
+    background-color: #ADD8E6; /* Light blue color */
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 20px; /* Padding for spacing */
+}
+
+.sidebar-image-container {
+    text-align: center;
+    overflow: hidden; /* Prevents large images from breaking layout */
+}
+
+.sidebar-image {
+    width: 50%; /* Makes image span full width of sidebar */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Center-align the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.nav-item {
+    margin: 10px 0; /* Add spacing between nav items */
+}
+
+.nav-link {
+    color: #000; /* Black color for the text */
+    font-weight: bold; /* Bold the text */
+}
+
+    .nav-link:hover {
+        color: #0056b3; /* Darker color on hover */
+    }
+
+/* Adjust the width of the sidebar */
+.col-md-3 {
+    width: 250px; /* Adjust this value for the desired sidebar width */
+}
+
+.navbar {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100px; /* Optional: Set height for the navbar */
+    background-color: #ADD8E6; /* Optional: Light blue background for styling */
+    margin: 0; /* Centers the navbar within its parent container */
+    width: 100%; /* Optional: Adjust width if needed */
+    text-align: center;
+}
+
+    .navbar h2 {
+        margin: 0; /* Remove default margins */
+        font-size: 2rem; /* Adjust font size */
+        color: #000; /* Optional: Set color */
+    }
+
+.footer-text {
+    position: fixed; /* Fixes the element relative to the viewport */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%; /* Centers horizontally relative to the page */
+    transform: translateX(-50%); /* Aligns it perfectly in the center */
+    background-color: #f8f9fa; /* Optional: Add a background color */
+    padding: 5px 10px; /* Optional: Add padding for better spacing */
+    font-size: 1rem; /* Adjust font size if needed */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow */
+}
+
+body {
+    background-color: #e7f2ff;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: darkgray;
+}
