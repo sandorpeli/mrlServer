@@ -99,7 +99,7 @@ public class SslServer {
                     } else {
                         string fullText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-                        Console.WriteLine("fullText received: " + fullText);
+                        //Console.WriteLine("fullText received: " + fullText);
 
                         if (fullText.Contains("HTTP")) {
                             break;
@@ -265,7 +265,7 @@ public class SslServer {
 
                                 if (fullText.Contains("--- AllDataEnd ---")) {
 
-                                    Console.WriteLine("A teljes adatcsomag unprocessed: " + GetAllData_full);
+                                    //Console.WriteLine("A teljes adatcsomag unprocessed: " + GetAllData_full);
 
                                     _sharedData.SetData(liftIdWithoutPrefix, "GetAllDataInProgress", false);
 
@@ -284,17 +284,11 @@ public class SslServer {
                                             tmp_Text = tmp_Text.Substring(startIndex + startDelimiter.Length);
                                         }
 
-
-
                                         startDelimiter = "RoundSTART";
                                         startIndex = fullText.IndexOf(startDelimiter);
                                         if (startIndex >= 0) {
                                             tmp_Text = tmp_Text.Substring(startIndex + startDelimiter.Length);
                                         }
-
-
-
-
 
                                         // Regular expression to match the sections to remove
                                         string pattern2 = @"RoundEND--- AllData ---\s+Round: \d+_Lift ID: 0x[0-9a-fA-F]+RoundSTART";                                        
@@ -304,37 +298,11 @@ public class SslServer {
                                         processd_text = Regex.Replace(processd_text, pattern2, "");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                         Console.WriteLine("A teljes adatcsomag processed: " + processd_text);
-
 
                                         GetAllData_full = "";
                                     }
                                 }
-
-
-
                             } else {
                                 GetAllData_full = "";
                             }

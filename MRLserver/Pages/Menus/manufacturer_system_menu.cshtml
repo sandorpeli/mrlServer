@@ -4,6 +4,8 @@
 }
 
 
+
+
 <head>
     <style>
         .item1 {
@@ -68,6 +70,8 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
             z-index: 1000;
+            align-items: center;
+            justify-content: center;
         }
 
         .modal-content {
@@ -84,7 +88,7 @@
 
         /* Show modal when activated */
         .modal-overlay.active {
-            display: block;
+            display: flex;
         }
     </style>
 </head>
@@ -134,7 +138,7 @@
     </div>
 
     <!-- Include the modal -->
-    <div class="modal-overlay @(ViewData["ShowModal"] as bool? == true ? "active" : "")">
+    <div class="modal-overlay @(TempData["ShowModal"] != null && (bool)TempData["ShowModal"] == true ? "active" : "")">
         <div class="modal-content">
             <h5>Processing</h5>
             <p>Please wait while your request is being processed...</p>
@@ -143,5 +147,32 @@
             </div>
         </div>
     </div>
+
+    <!-- Close modal logic -->
+    <script>
+        // This JavaScript will check the TempData["ShowModal"] flag and hide the modal when the task is completed.
+        @if (TempData["ShowModal"] != null && (bool)TempData["ShowModal"] == false)
+        {
+            <text>
+                    // When TempData["ShowModal"] is false, hide the modal
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var modal = document.querySelector('.modal-overlay');
+                        if (modal) {
+                            modal.classList.remove('active'); // Hide the modal
+                        }
+                    });
+            </text>
+        }
+    </script>
+
+    <!-- Optional: Close the modal if clicked outside the modal content area -->
+    <script>
+        document.querySelector('.modal-overlay')?.addEventListener('click', function(event) {
+            if (event.target === this) {
+                this.style.display = 'none'; // Hide the modal when clicked outside
+            }
+        });
+    </script>
+
 
 </body>

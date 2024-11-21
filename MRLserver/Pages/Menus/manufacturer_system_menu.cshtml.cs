@@ -7,22 +7,42 @@ namespace MRLserver.Pages
 {
     public class manufacturer_system_menuModel : PageModel {
         private readonly SharedMRLdata _sharedData;
-        private bool FIRST_TIME;
+        private bool FIRST_TIME = true;
+        private static bool _backgroundTaskCompleted = false;
 
         public manufacturer_system_menuModel(SharedMRLdata sharedData) {
             _sharedData = sharedData;
-            FIRST_TIME = true;
+            _backgroundTaskCompleted = false;
         }
 
         public void OnGet(SharedMRLdata sharedData) {
-            _sharedData.SetData("313437303139510B00330027", "GetAllData", 1);   
-            
-            if(FIRST_TIME == true) {
-                ViewData["ShowModal"] = true;
+            _sharedData.SetData("313437303139510B00330027", "GetAllData", 1);
+
+            // Show modal initially when OnGet is called
+            if (FIRST_TIME) {
+                TempData["ShowModal"] = false;      // TODO nem sikerült megoldani, hogy az adatlekérés után eltûnjön a modal.
                 FIRST_TIME = false;
+            } else {
+                TempData["ShowModal"] = false;  // Set it to false after first time
             }
 
-            _ = Task.Run(async () => await WaitForAllDatatRefresh());
+            // Start background task
+            if (!_backgroundTaskCompleted) {     
+                _ = Task.Run(async () =>
+                {
+                    await WaitForAllDatatRefresh();
+                    _backgroundTaskCompleted = true;
+
+                    TempData["ShowModal"] = false;
+
+                    //RedirectToPage("/Menus/setOutputPin");
+                    Response.Redirect(Request.Path);  // Reload the current page
+                    //RedirectToPage();
+
+                    //Response.Redirect("/Menus/manufacturer_system_menu");
+                });
+
+            }            
         }
 
         public IActionResult OnPost() {
@@ -58,16 +78,11 @@ namespace MRLserver.Pages
                 
                 if ((data == null || (data is bool && (bool)data == false)) && (data2 == null || (data2 is int && (int)data2 == 0))) {
                     // Do something when data is either null or false
-                    ViewData["ShowModal"] = false;
                     excape_flag = true;
-                    Page();
                 } else {
                     cnt++;
                     if (cnt >= 100) {
-                        ViewData["ShowModal"] = false;
                         excape_flag = true;
-                        Page();
-                        RedirectToPage("/Index");
                     }
                 }
             }
