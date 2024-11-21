@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRLserver", "MRLserver.csproj", "{89C75014-D7ED-49FB-99B7-FA765066CFA2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBC25085-5549-499A-92CE-FE78317C36A3}"
+	ProjectSection(SolutionItems) = preProject
+		dockerfile = dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

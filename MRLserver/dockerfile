@@ -1,0 +1,21 @@
+# Use the official .NET SDK image from the Docker Hub
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+# Use the official .NET SDK image to build the project
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["MRLserver/MRLserver.csproj", "MRLserver/"]
+RUN dotnet restore "MRLserver/MRLserver.csproj"
+COPY . .
+WORKDIR "/src/MRLserver"
+RUN dotnet build "MRLserver.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "MRLserver.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "MRLserver.dll"]
